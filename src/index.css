@@ -1,13 +1,156 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+.sidebar{
+    padding-top: 10px; 
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    -webkit-box-shadow: 21px 0px 16px -22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 21px 0px 16px -22px rgba(0,0,0,0.75);
+    box-shadow: 21px 0px 16px -22px rgba(0,0,0,0.75);
+}
+.logo{
+    padding: 10px;
+    padding-bottom: 150px;
+}
+.logo>img{
+    height: 100px;
+    width: 180px;
+}
+.menuContainer{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    transition-duration: .5s;
+}
+.sidecontent{
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 0;
+    width: 150px;
+    background-color: #09d48a;
+    color: white;
+    display: none;
+    transition-duration: .5s;
+}
+.smitem{
+    font-size: 18px;
+    padding: 10px;   
+    transition-duration: .2s;
+}
+.smitem:hover{
+    transform: scale(1.25);
+    transition-duration: .2s;
+}
+.sideMenuExtra>i{
+    color: #000000a6; 
+    font-size: 31px;
+    padding-bottom: 12px;
+}
+.menuContainer>i{
+      color: #000000a6; 
+    font-size: 31px;
+    padding-bottom: 12px;
+}
+.menuContainer>p{
+    font-size: 15px;
+}
+.menuContainer:hover{
+    z-index: 1;
+    background-color: #09d48a;
+    color: white;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.menuContainer:hover .sideMenuExtra>i{
+    color: white;
+    transition-duration: .5s;
+}
+.menuContainer:hover i{
+    color: white;
+    transition-duration: .5s;
+}
+.menuContainer:hover .sidecontent{
+    display: block;
+    transition-duration: .5s;
+}
+.main{
+    margin-left: 200px;
+}
+.mainimg{
+    width: 50%;
+    height: 70vh;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition-duration: .5s;       
+}
+.back1{
+    background-image: url("./images/picture/Natural Product Profile.png");
+}
+.back2{
+    background-image: url("./images/picture/Bakery Products.png");
+}
+.back3{
+    background-image: url("./images/picture/Energy Drink.jpg");
+}
+.back4{
+    background-image: url("./images/picture/Ice Tea - Latest.jpg");
+}
+.grid2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.overimg{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition-duration: .5s;   
+    text-align: center;
+}
+.overimg>h1{
+    position: relative;
+    top: 45%;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+.mainimg:hover{
+    transform: scale(.98);
+    transition-duration: .5s;
+}
+.mainimg:hover div{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.685);
+    transition-duration: .5s;
+}
+.secimg{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition-duration: .5s;      
+}
+.secimg:hover{
+    transform: scale(.99);
+    transition-duration: .5s;
+}
+.secimg:hover div{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.685);
+    transition-duration: .5s;
 }
