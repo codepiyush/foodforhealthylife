@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap');
-
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
-.sidebar{
-    padding-top: 10px; 
+
+.sidebar {
+    padding-top: 10px;
     height: 100%;
     background-color: rgb(255, 255, 255);
     width: 200px;
     position: fixed;
-    z-index: 1;
-    top: 0; 
+    z-index: 2;
+    top: 0;
     left: 0;
-    -webkit-box-shadow: 21px 0px 16px -22px rgba(0,0,0,0.75);
-    -moz-box-shadow: 21px 0px 16px -22px rgba(0,0,0,0.75);
-    box-shadow: 21px 0px 16px -22px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 21px 0px 16px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 21px 0px 16px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 21px 0px 16px -22px rgba(0, 0, 0, 0.75);
 }
-.logo{
+
+.logo {
     padding: 10px;
     padding-bottom: 150px;
 }
-.logo>img{
+
+.logo>img {
     height: 100px;
     width: 180px;
 }
-.menuContainer{
+
+.menuContainer {
     position: relative;
     padding: 20px;
     text-align: center;
@@ -34,123 +37,332 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.164);
     transition-duration: .5s;
 }
-.sidecontent{
-    padding: 10px;
+
+.sidecontent {
+    padding: 7px;
     position: absolute;
     z-index: 1;
     left: 200px;
     top: 0;
     width: 150px;
-    background-color: #09d48a;
+    background-color: #10be44;
     color: white;
     display: none;
+    border-radius: 2px;
     transition-duration: .5s;
+    -webkit-box-shadow: 28px 1px 20px 12px rgba(0,0,0,0.43);
+    -moz-box-shadow: 28px 1px 20px 12px rgba(0,0,0,0.43);
+    box-shadow: 28px 1px 20px 12px rgba(0,0,0,0.43);
 }
-.smitem{
-    font-size: 18px;
-    padding: 10px;   
+
+.smitem {
+    font-size: 20px;
+    padding: 10px;
     transition-duration: .2s;
 }
-.smitem:hover{
-    transform: scale(1.25);
+
+.smitem:hover {
+    transform: scale(1.2);
     transition-duration: .2s;
 }
-.sideMenuExtra>i{
-    color: #000000a6; 
+
+.sideMenuExtra>i {
+    color: #000000a6;
     font-size: 31px;
     padding-bottom: 12px;
 }
-.menuContainer>i{
-      color: #000000a6; 
+
+.menuContainer>i {
+    color: #000000a6;
     font-size: 31px;
     padding-bottom: 12px;
 }
-.menuContainer>p{
+
+.menuContainer>p {
     font-size: 15px;
 }
-.menuContainer:hover{
+
+.menuContainer:hover {
     z-index: 1;
-    background-color: #09d48a;
+    background-color: #10be44;
     color: white;
     transition-duration: .5s;
     cursor: pointer;
 }
-.menuContainer:hover .sideMenuExtra>i{
+
+.menuContainer:hover .sideMenuExtra>i {
     color: white;
     transition-duration: .5s;
 }
-.menuContainer:hover i{
+
+.menuContainer:hover i {
     color: white;
     transition-duration: .5s;
 }
-.menuContainer:hover .sidecontent{
+
+.menuContainer:hover .sidecontent {
     display: block;
     transition-duration: .5s;
 }
-.main{
+
+/*--slider--*/
+
+.landing {
     margin-left: 200px;
+    -webkit-box-shadow: -2px 16px 15px -4px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -2px 16px 15px -4px rgba(0, 0, 0, 0.26);
+    box-shadow: -2px 16px 15px -4px rgba(0, 0, 0, 0.26);
 }
-.mainimg{
-    width: 50%;
-    height: 70vh;
-    position: relative;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition-duration: .5s;       
-}
-.back1{
-    background-image: url("./images/picture/Natural Product Profile.png");
-}
-.back2{
-    background-image: url("./images/picture/Bakery Products.png");
-}
-.back3{
-    background-image: url("./images/picture/Energy Drink.jpg");
-}
-.back4{
-    background-image: url("./images/picture/Ice Tea - Latest.jpg");
-}
-.grid2{
-    display: flex;
-    flex-wrap: wrap;
-}
-.overimg{
-    height: 100%;
+
+#slider {
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    opacity: 0;
-    transition-duration: .5s;   
-    text-align: center;
-}
-.overimg>h1{
+    height: 80vh;
     position: relative;
-    top: 45%;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
+    overflow: hidden;
+    background-color: #ecfaf2;
 }
-.mainimg:hover{
-    transform: scale(.98);
-    transition-duration: .5s;
+
+@keyframes load {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
 }
-.mainimg:hover div{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.685);
-    transition-duration: .5s;
-}
-.secimg{
-    width: 50%;
-    height: 100vh;
+
+.slides {
+    width: 400%;
+    height: 100%;
+    background-color: rgb(248, 244, 244);
     position: relative;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transition-duration: .5s;      
+    -webkit-animation: slide 30s infinite;
+    -moz-animation: slide 30s infinite;
+    animation: slide 30s infinite;
 }
-.secimg:hover{
-    transform: scale(.99);
-    transition-duration: .5s;
+
+.slider {
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
-.secimg:hover div{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.685);
-    transition-duration: .5s;
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Switch */
+
+.switch {
+    width: 120px;
+    height: 10px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 99;
+    left: 49%;
+}
+
+.switch>ul {
+    list-style: none;
+}
+
+.switch>ul>li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.switch ul {
+    overflow: hidden;
+}
+
+.on {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #10be44;
+    position: relative;
+    -webkit-animation: on 30s infinite;
+    -moz-animation: on 30s infinite;
+    animation: on 30s infinite;
+}
+
+/* Animation */
+
+@-webkit-keyframes slide {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    21% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    46% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    71% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    96% {
+        margin-left: -300%;
+    }
+}
+
+@-moz-keyframes slide {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    21% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    46% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    71% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    96% {
+        margin-left: -300%;
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    21% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    46% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    71% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    96% {
+        margin-left: -300%;
+    }
+}
+
+@-webkit-keyframes on {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    21% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 15px;
+    }
+    46% {
+        margin-left: 15px;
+    }
+    50% {
+        margin-left: 30px;
+    }
+    71% {
+        margin-left: 30px;
+    }
+    75% {
+        margin-left: 45px;
+    }
+    96% {
+        margin-left: 45px;
+    }
+}
+
+@-moz-keyframes on {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    21% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 15px;
+    }
+    46% {
+        margin-left: 15px;
+    }
+    50% {
+        margin-left: 30px;
+    }
+    71% {
+        margin-left: 30px;
+    }
+    75% {
+        margin-left: 45px;
+    }
+    96% {
+        margin-left: 45px;
+    }
+}
+
+@keyframes on {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    21% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: 15px;
+    }
+    46% {
+        margin-left: 15px;
+    }
+    50% {
+        margin-left: 30px;
+    }
+    71% {
+        margin-left: 30px;
+    }
+    75% {
+        margin-left: 45px;
+    }
+    96% {
+        margin-left: 45px;
+    }
 }

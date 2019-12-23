@@ -1,12 +1,13 @@
 import React from "react";
 import Sidebar from "./sidebar";
+import Landing from './Landing';
 
 class App extends React.Component {
     render() {
         return (
             <div>
                 <Sidebar />
-                <div className="main">
+                {/* <div className="main">
                     <div className="msec">
                         <div className="grid2">
                             <div className="mainimg back1">
@@ -33,7 +34,8 @@ class App extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
+               <Landing/>
             </div>
         )
     }

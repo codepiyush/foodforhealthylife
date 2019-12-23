@@ -30,7 +30,6 @@ class Sidebar extends Component {
                         <p>Contact us</p>
                     </div>
                 </div>
-
             </div>
         )
     }
