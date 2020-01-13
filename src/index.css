@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 * {
     margin: 0;
     padding: 0;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .sidebar {
@@ -45,14 +56,14 @@
     left: 200px;
     top: 0;
     width: 150px;
-    background-color: #10be44;
+    background-color: #099e44;
     color: white;
     display: none;
     border-radius: 2px;
     transition-duration: .5s;
-    -webkit-box-shadow: 28px 1px 20px 12px rgba(0,0,0,0.43);
-    -moz-box-shadow: 28px 1px 20px 12px rgba(0,0,0,0.43);
-    box-shadow: 28px 1px 20px 12px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 28px 2px 20px -17px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 28px 2px 20px -17px rgba(0, 0, 0, 0.33);
+    box-shadow: 28px 2px 20px -17px rgba(0, 0, 0, 0.33);
 }
 
 .smitem {
@@ -84,7 +95,7 @@
 
 .menuContainer:hover {
     z-index: 1;
-    background-color: #10be44;
+    background-color: #099e44;
     color: white;
     transition-duration: .5s;
     cursor: pointer;
@@ -116,7 +127,7 @@
 
 #slider {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
     background-color: #ecfaf2;
@@ -196,7 +207,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #10be44;
+    background: #099e44;
     position: relative;
     -webkit-animation: on 30s infinite;
     -moz-animation: on 30s infinite;
@@ -365,4 +376,138 @@
     96% {
         margin-left: 45px;
     }
+}
+
+/*--Main--*/
+
+.main {
+    margin-left: 200px;
+    height: 150vh;
+}
+
+.nav2 {
+    box-shadow: 0 8px 6px -9px black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    padding: 10px 35px;
+    letter-spacing: 1px;
+    color: #099e44;
+    font-weight: bold;
+}
+
+.head-cont {
+    border-right: 1px solid rgb(8, 8, 8);
+}
+
+hr {
+    margin: .75% 25%;
+    width: 50%;
+}
+
+.products {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.products>button {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px 1px 10px 10px;
+    outline: none;
+    font-family: 'Titillium Web', sans-serif;
+    transition-duration: .5s;
+}
+
+.products>button:hover {
+    color: #099e44;
+    transform: scale(1.2);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.normal-cookie {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.premium-button {
+    position: relative;
+    transition-duration: .5s;
+    padding: 7px;
+    font-size: 21px;
+    font-weight: bold;
+    width: 250px;
+    border: none;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: all .5s;
+    background: radial-gradient(90% 50px at right, #A37320, #EFEA7E, #A37320);
+}
+
+.premium-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.premium-button span::after {
+    content: "   \00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.premium-button:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
+.premium-button:hover span {
+    padding-right: 25px;
+}
+
+/*--display--*/
+
+.disp-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 380px;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.disp-desc {
+    padding: 10px;
+    font-weight: bold;
+    color: #099e44;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.disp-desc>p{
+    padding: 2px;
+}
+.disp-desc-sub {
+    color: #333;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 10px;
 }
