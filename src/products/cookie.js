@@ -21,11 +21,11 @@ class Normal extends React.Component {
         this.state = {
             cookies: [
                 {
-                    imageUrl: require('../images/picture/R2.png'), 
+                    imageUrl: require('../images/picture/R2.png'),
                     name: 'Coconut Cookie',
                     detail: ['Hand Crafted', 'Eggless', "Suger Free"],
                 },
-                
+
             ]
         }
     }
@@ -37,14 +37,12 @@ class Normal extends React.Component {
                         <span>Premium Cookies</span>
                     </button>
                 </Link>
-                <div style={{marginTop: '50px', display: 'flex'}}>
-                    {this.state.cookies.map(cookie=>{
-                        return(
-                            <Display desc = {{...cookie}}/>
+                <div style={{ marginTop: '50px', display: 'flex' }}>
+                    {this.state.cookies.map(cookie => {
+                        return (
+                            <Display desc={{ ...cookie }} />
                         )
                     })}
-                    {/* <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/>
-                    <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/> */}
                 </div>
             </div>
         )
