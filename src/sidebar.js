@@ -14,18 +14,18 @@ class Sidebar extends Component {
                 </div>
                 <div className="menu">
                     <div className="menuContainer">
-                    <a href="#products" id = 'some'>
-                        <div className="sideMenuExtra">
-                            <i class="fas fa-shopping-cart"></i>
-                             <p>Our Products</p>
-                        </div>
+                        <a href="#products" id='some'>
+                            <div className="sideMenuExtra">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p>Our Products</p>
+                            </div>
                         </a>
                         <div className="sidecontent">
-                            <div className="smitem" onClick = {this.onClickSport}> <Link to='/products/cookie'>Cookie</Link></div>
-                            <div className="smitem" id='sportsd' onClick = {this.onClickSport}>Sports Drinks</div>
-                            <div className="smitem" onClick = {this.onClickSport}>Ice Tea</div>
-                            <div className="smitem" onClick = {this.onClickSport}><Link to='/products/biscuit'>Biscuit</Link></div>
-                            <div className="smitem" onClick = {this.onClickSport}>Nutri Bar</div>
+                            <div className="smitem" onClick={this.onClickSport}> <Link to='/products/cookie'>Cookie</Link></div>
+                            <div className="smitem" id='sportsd' onClick={this.onClickSport}>Sports Drinks</div>
+                            <div className="smitem" onClick={this.onClickSport}>Ice Tea</div>
+                            <div className="smitem" onClick={this.onClickSport}><Link to='/products/biscuit'>Biscuit</Link></div>
+                            <div className="smitem" onClick={this.onClickSport}>Nutri Bar</div>
                         </div>
                     </div>
                     <div className="menuContainer">

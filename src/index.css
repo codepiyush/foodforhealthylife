@@ -74,7 +74,6 @@ a {
 
 .smitem:hover {
     transform: scale(1.2);
-    transition-duration: .2s;
 }
 
 .sideMenuExtra>i {
@@ -97,7 +96,6 @@ a {
     z-index: 1;
     background-color: #099e44;
     color: white;
-    transition-duration: .5s;
     cursor: pointer;
 }
 
@@ -424,7 +422,7 @@ hr {
     background-color: white;
     font-size: 20px;
     padding: 5px 10px 5px 10px;
-    margin: 15px 1px 10px 10px;
+    margin: 15px 1px 10px 45px;
     outline: none;
     font-family: 'Titillium Web', sans-serif;
     transition-duration: .5s;
@@ -485,7 +483,13 @@ hr {
 
 /*--display--*/
 
+.disp-segment {
+    display: flex;
+    position: relative;
+}
+
 .disp-container {
+    margin-right: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -495,6 +499,7 @@ hr {
     -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
 }
+
 .disp-desc {
     padding: 10px;
     font-weight: bold;
@@ -502,12 +507,59 @@ hr {
     font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
 }
-.disp-desc>p{
+
+.disp-desc>p {
     padding: 2px;
 }
+
 .disp-desc-sub {
     color: #333;
     font-weight: normal;
     font-size: 12px;
     margin-left: 10px;
+}
+
+.name-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.info-icon {
+    display: flex;
+    background-color: #099e44;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    color: #ecfaf2;
+    font-size: 15px;
+    border-radius: 5px;
+    transition-duration: .5s;
+    border: 1px solid #099e44;
+}
+
+.info-icon:hover {
+    cursor: pointer;
+    background-color: #ecfaf2;
+    color: #099e44;
+}
+
+.detail-box {
+    display: none;
+    background-color: white;
+    width: 250px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 250px;
+    transition: all 5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.info-icon:hover .detail-box {
+    display: block;
+    transition-duration: .5s;
 }
