@@ -499,7 +499,7 @@ hr {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 280px;
   height: 400px;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
@@ -560,7 +560,6 @@ hr {
   top: 0;
   z-index: 2;
   left: 250px;
-  transition: all 5s ease-in-out;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
