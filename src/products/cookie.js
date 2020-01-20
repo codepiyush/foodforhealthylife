@@ -27,7 +27,7 @@ class Normal extends React.Component {
         {
           imageUrl: require("../images/picture/R2.png"),
           name: "Coconut Cookie",
-          detail: ["Hand Crafted", "Eggless", "Suger Free"]
+          detail: ["Hand Crafted", "Eggless", "Suger Free"],
         },
         {
           imageUrl: require("../images/picture/R6.png"),
