@@ -22,7 +22,7 @@ class Normal extends React.Component {
   constructor() {
     super();
     this.state = {
-      cookies: [
+      biscuit: [
         {
           imageUrl: require("../images/picture/JeeraCookies.png"),
           name: "Jeera Cookie",
@@ -40,7 +40,7 @@ class Normal extends React.Component {
           </button>
         </Link>
         <div style={{ marginTop: "50px", display: "flex" }}>
-          {this.state.cookies.map(cookie => {
+          {this.state.biscuit.map(cookie => {
             return <Display desc={{ ...cookie }} />;
           })}
           {/* <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/>
