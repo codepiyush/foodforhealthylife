@@ -457,7 +457,7 @@ hr {
   padding: 7px;
   font-size: 21px;
   font-weight: bold;
-  width: 250px;
+  width: 300px;
   border: none;
   font-family: "Titillium Web", sans-serif;
   border-radius: 10px;
@@ -495,17 +495,40 @@ hr {
 /*--display--*/
 
 .disp-segment {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  width: 500px;
+  height: 400px;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.disp-segment1 {
+  margin-right: 20px;
   display: flex;
   position: relative;
 }
-
 .disp-container {
   margin-right: 20px;
   background-color: white;
   display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.disp-container1 {
+  margin-right: 20px;
+  background-color: white;
+  display: flex;
   flex-direction: column;
-  width: 280px;
-  height: 400px;
+  width: 300px;
+  height: 360px;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
@@ -527,6 +550,13 @@ hr {
   padding: 10px;
   text-align: center;
   height: 260px;
+}
+.disp-img-sec1 {
+  margin-top: 70px;
+  padding: 5px;
+  text-align: bottom;
+  height: 100px;
+  width: 400px;
 }
 
 .disp-desc-sub {

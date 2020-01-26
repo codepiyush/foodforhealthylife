@@ -26,23 +26,57 @@ class Normal extends React.Component {
       cookies: [
         {
           imageUrl: require("../images/picture/R2.png"),
+          imageUrl1: require("../images/picture/1.png"),
           name: "Coconut Cookie",
-          detail: ["Hand Crafted", "Eggless", "Suger Free"],
+          detail: ["Hand Crafted", "Eggless"]
         },
         {
           imageUrl: require("../images/picture/R6.png"),
+          imageUrl1: require("../images/picture/5.png"),
           name: "Almond Finger Cookies",
-          detail: ["Hand Crafted", "Eggless", "Sugar Free"]
+          detail: ["Hand Crafted", "Eggless"]
         },
         {
           imageUrl: require("../images/picture/R7.png"),
+          imageUrl1: require("../images/picture/Prm-OM2.jpg"),
           name: "Oatmeal Chocochip Cookies",
-          detail: ["Hand Crafted", "Eggless", "Sugar Free"]
+          detail: ["Hand Crafted", "Eggless"]
         },
         {
           imageUrl: require("../images/picture/R9.png"),
+          imageUrl1: require("../images/picture/8.png"),
           name: "Milky Chocochip Cookies",
-          detail: ["Hand Crafted", "Eggless", "Sugar Free"]
+          detail: ["Hand Crafted", "Eggless"]
+        }
+      ]
+    };
+  }
+  render() {
+    return (
+      <div className="normal-cookie">
+        <Link to="/products/cookie/premium">
+          <button className="premium-button">
+            <span>Modern Trade Cookies</span>
+          </button>
+        </Link>
+        <div style={{ marginTop: "50px", display: "flex" }}>
+          {this.state.cookies.map(cookie => {
+            return <Display desc={{ ...cookie }} />;
+          })}
+        </div>
+      </div>
+    );
+  }
+}
+class Premium extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      cookies: [
+        {
+          imageUrl: require("../images/picture/R2.png"),
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"]
         }
       ]
     };
@@ -62,11 +96,6 @@ class Normal extends React.Component {
         </div>
       </div>
     );
-  }
-}
-class Premium extends React.Component {
-  render() {
-    return <div>Premium</div>;
   }
 }
 export default Cookie;

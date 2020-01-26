@@ -17,7 +17,7 @@ class Main extends React.Component {
               <Link to="/products/cookie">Cookie</Link>
             </button>
             <button>
-              <Link to="/products/biscuit">Biscuit</Link>
+              <Link to="/products/biscuit">Healthy Cookies</Link>
             </button>
             <button>Energy Drink</button>
             <button>Nutri Bar</button>
