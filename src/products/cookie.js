@@ -25,26 +25,37 @@ class Normal extends React.Component {
     this.state = {
       cookies: [
         {
-          imageUrl: require("../images/picture/R2.png"),
-          imageUrl1: require("../images/picture/1.png"),
+          images: [
+            require("../images/picture/R2.png"),
+            require("../images/picture/1.png"),
+          ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"]
         },
         {
-          imageUrl: require("../images/picture/R6.png"),
-          imageUrl1: require("../images/picture/5.png"),
+          images: [
+            require("../images/picture/R6.png"),
+            require("../images/picture/5.png"),
+          ],
+
           name: "Almond Finger Cookies",
           detail: ["Hand Crafted", "Eggless"]
         },
         {
-          imageUrl: require("../images/picture/R7.png"),
-          imageUrl1: require("../images/picture/Prm-OM2.jpg"),
+          images: [
+            require("../images/picture/R7.png"),
+            require("../images/picture/Prm-OM2.jpg"),
+          ],
+
           name: "Oatmeal Chocochip Cookies",
           detail: ["Hand Crafted", "Eggless"]
         },
         {
-          imageUrl: require("../images/picture/R9.png"),
-          imageUrl1: require("../images/picture/8.png"),
+          images: [
+            require("../images/picture/R9.png"),
+            require("../images/picture/8.png"),
+          ],
+
           name: "Milky Chocochip Cookies",
           detail: ["Hand Crafted", "Eggless"]
         }
@@ -53,7 +64,7 @@ class Normal extends React.Component {
   }
   render() {
     return (
-      <div className="normal-cookie">
+      <div className="normal-coxokie">
         <Link to="/products/cookie/premium">
           <button className="premium-button">
             <span>Modern Trade Cookies</span>

@@ -3,9 +3,21 @@ import React from "react";
 class Display1 extends React.Component {
   constructor() {
     super();
+    this.state = {
+      imageno: 0,
+    }
     this.renderDetails = this.renderDetails.bind(this);
+    this.renderImage1 = this.renderImage1.bind(this);
+    this.renderImage2 = this.renderImage2.bind(this);
+
   }
 
+  renderImage1() {
+    this.setState({imageno:0})
+  }
+  renderImage2() {
+    this.setState({imageno:1})
+}
   renderDetails = () => {
     this.props.desc.detail.map(details => {
       console.log(details);
@@ -24,8 +36,9 @@ class Display1 extends React.Component {
             className="disp-img-sec"
             style={{ padding: "10px", textAlign: "center" }}
           >
+            <button className='next-button' onMouseOver={this.renderImage2} onMouseOut={this.renderImage1}>next</button>
             <img
-              src={this.props.desc.imageUrl}
+              src={this.props.desc.images[this.state.imageno]}  
               alt="pic"
               width="180px"
               height="250px"

@@ -550,6 +550,7 @@ hr {
   padding: 10px;
   text-align: center;
   height: 260px;
+  position: relative;
 }
 .disp-img-sec1 {
   margin-top: 70px;
@@ -610,4 +611,10 @@ hr {
   display: block;
   transition: ease-in-out;
   transition-duration: 0.5s;
+}
+.next-button {
+position: absolute;
+top: 50%;
+right : 0;
+z-index: 1;
 }
