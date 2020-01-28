@@ -62,6 +62,38 @@ class Normal extends React.Component {
           ],
           name: "WaterChestNut Cookies",
           detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/Protein Cookies 100g.jpg"),
+            require("../images/picture/Protein Cookies 200g.jpg")
+          ],
+          name: "Protein Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/BUCKWHEAT COOKIEE.jpg"),
+            require("../images/picture/P-4.png")
+          ],
+          name: "Buckwheat Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/ProteinCookiee.jpg"),
+            require("../images/picture/ProteinCookiee.jpg")
+          ],
+          name: "Protein Cookiee",
+          detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/P-5.png"),
+            require("../images/picture/P-5.png")
+          ],
+          name: "WaterChestNut Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
         }
       ]
     };
@@ -74,9 +106,9 @@ class Normal extends React.Component {
             <span>Healthy Cookies</span>
           </button>
         </Link>
-        <div style={{ marginTop: "50px", display: "flex" }}>
-          {this.state.biscuit.map(cookie => {
-            return <Display desc={{ ...cookie }} />;
+        <div className="display-main">
+          {this.state.biscuit.map(biscuit => {
+            return <Display desc={{ ...biscuit }} />;
           })}
           {/* <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/>
                       <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/> */}
