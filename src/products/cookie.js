@@ -58,6 +58,15 @@ class Normal extends React.Component {
 
           name: "Milky Chocochip Cookies",
           detail: ["Hand Crafted", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/R4.png"),
+            require("../images/picture/3.png")
+          ],
+
+          name: "Basen Pistachio Khatai",
+          detail: ["Hand Crafted", "Eggless"]
         }
       ]
     };
@@ -70,7 +79,7 @@ class Normal extends React.Component {
             <span>Modern Trade Cookies</span>
           </button>
         </Link>
-        <div className='display-main'>
+        <div className="display-main">
           {this.state.cookies.map(cookie => {
             return <Display desc={{ ...cookie }} />;
           })}
@@ -85,7 +94,11 @@ class Premium extends React.Component {
     this.state = {
       cookies: [
         {
-          imageUrl: require("../images/picture/R2.png"),
+          images: [
+            require("../images/picture/R2.png"),
+            require("../images/picture/R2.png")
+          ],
+
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"]
         }
