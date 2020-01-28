@@ -24,14 +24,44 @@ class Normal extends React.Component {
     this.state = {
       biscuit: [
         {
-          imageUrl: require("../images/picture/JeeraCookies.png"),
-          name: "Jeera Cookie",
-          detail: ["Hand Crafted", "Eggless"]
+          images: [
+            require("../images/picture/BuckN'Flax Cookies 100g.jpg"),
+            require("../images/picture/BuckN'Flax Cookies 200g.jpg")
+          ],
+          name: "BuckN'Flax Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
         },
         {
-          imageUrl: require("../images/picture/8. Badam Bites Cookies 300g.jpg"),
-          name: "Badam Bites",
-          detail: ["Hand Crafted", "Eggless"]
+          images: [
+            require("../images/picture/ChocoChip Cookies 100g.jpg"),
+            require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "ChocoChip Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/FruitN'Nuts Cookies 100g.jpg"),
+            require("../images/picture/FruitN'Nut Cookies 200g.jpg")
+          ],
+          name: "FruitN'Nut Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/HoneyN'Oatmeal 100g.jpg"),
+            require("../images/picture/HoneyN'Oatmeal Cookies 200g.jpg")
+          ],
+          name: "HoneyN'Oatmeal Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/WaterChestNut 100g.jpg"),
+            require("../images/picture/WaterChestNut Cookies 200g.jpg")
+          ],
+          name: "WaterChestNut Cookies",
+          detail: ["Hand Made Classics", "Eggless"]
         }
       ]
     };
