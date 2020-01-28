@@ -27,7 +27,7 @@ class Normal extends React.Component {
         {
           images: [
             require("../images/picture/R2.png"),
-            require("../images/picture/1.png"),
+            require("../images/picture/1.png")
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"]
@@ -35,7 +35,7 @@ class Normal extends React.Component {
         {
           images: [
             require("../images/picture/R6.png"),
-            require("../images/picture/5.png"),
+            require("../images/picture/5.png")
           ],
 
           name: "Almond Finger Cookies",
@@ -44,7 +44,7 @@ class Normal extends React.Component {
         {
           images: [
             require("../images/picture/R7.png"),
-            require("../images/picture/Prm-OM2.jpg"),
+            require("../images/picture/Prm-OM2.jpg")
           ],
 
           name: "Oatmeal Chocochip Cookies",
@@ -53,7 +53,7 @@ class Normal extends React.Component {
         {
           images: [
             require("../images/picture/R9.png"),
-            require("../images/picture/8.png"),
+            require("../images/picture/8.png")
           ],
 
           name: "Milky Chocochip Cookies",
@@ -64,7 +64,7 @@ class Normal extends React.Component {
   }
   render() {
     return (
-      <div className="normal-coxokie">
+      <div className="normal-cookie">
         <Link to="/products/cookie/premium">
           <button className="premium-button">
             <span>Modern Trade Cookies</span>
