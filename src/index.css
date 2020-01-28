@@ -442,8 +442,14 @@ hr {
 }
 
 .normal-cookie {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 60px;
+}
+.display-main {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .normal-biscuit {
@@ -497,42 +503,21 @@ hr {
 .disp-segment {
   margin-right: 20px;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: white;
-  width: 500px;
-  height: 400px;
-  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-}
-.disp-segment1 {
-  margin-right: 20px;
-  display: flex;
   position: relative;
 }
+
 .disp-container {
-  margin-right: 20px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  width: 500px;
-  height: 300px;
-  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-}
-.disp-container1 {
   margin-right: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 360px;
+  height: 380px;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
 }
+
 
 .disp-desc {
   padding: 10px;
@@ -551,13 +536,6 @@ hr {
   text-align: center;
   height: 260px;
   position: relative;
-}
-.disp-img-sec1 {
-  margin-top: 70px;
-  padding: 5px;
-  text-align: bottom;
-  height: 100px;
-  width: 400px;
 }
 
 .disp-desc-sub {

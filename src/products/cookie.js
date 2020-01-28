@@ -70,7 +70,7 @@ class Normal extends React.Component {
             <span>Modern Trade Cookies</span>
           </button>
         </Link>
-        <div style={{ marginTop: "50px", display: "flex" }}>
+        <div className='display-main'>
           {this.state.cookies.map(cookie => {
             return <Display desc={{ ...cookie }} />;
           })}
@@ -100,7 +100,7 @@ class Premium extends React.Component {
             <span>Premium Cookies</span>
           </button>
         </Link>
-        <div style={{ marginTop: "50px", display: "flex" }}>
+        <div>
           {this.state.cookies.map(cookie => {
             return <Display desc={{ ...cookie }} />;
           })}

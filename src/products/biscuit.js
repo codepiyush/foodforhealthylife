@@ -1,5 +1,5 @@
 import React from "react";
-import Display1 from "./second_display";
+import Display from "./display";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 class Biscuits extends React.Component {
@@ -76,7 +76,7 @@ class Normal extends React.Component {
         </Link>
         <div style={{ marginTop: "50px", display: "flex" }}>
           {this.state.biscuit.map(cookie => {
-            return <Display1 desc={{ ...cookie }} />;
+            return <Display desc={{ ...cookie }} />;
           })}
           {/* <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/>
                       <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/> */}
