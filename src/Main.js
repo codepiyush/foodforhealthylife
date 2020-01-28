@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Biscuits from "./products/biscuit";
 import Cookie from "./products/cookie";
-
+import Home from './Home'
 class Main extends React.Component {
   render() {
     return (
@@ -26,6 +26,10 @@ class Main extends React.Component {
         </div>
         <div>
           <Switch>
+          <Route exact path="/">
+              {" "}
+              <Home />{" "}
+            </Route>
             <Route path="/products/biscuit">
               {" "}
               <Biscuits />{" "}
