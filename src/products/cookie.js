@@ -67,6 +67,15 @@ class Normal extends React.Component {
 
           name: "Basen Pistachio Khatai",
           detail: ["Hand Crafted", "Eggless"]
+        },
+        {
+          images: [
+            require("../images/picture/R11.png"),
+            require("../images/picture/10.png")
+          ],
+
+          name: "Basen Pistachio Khatai",
+          detail: ["Hand Crafted", "Eggless"]
         }
       ]
     };
