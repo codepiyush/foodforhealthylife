@@ -55,12 +55,12 @@ class Display1 extends React.Component {
               </div>
             </div>
             {this.props.desc.detail.map(details => {
-                return (
-                  <div>
-                    <p className="disp-desc-sub">-{details}</p>
-                  </div>
-                );
-              })}
+              return (
+                <div>
+                  <p className="disp-desc-sub">-{details}</p>
+                </div>
+              );
+            })}
 
           </div>
         </div>

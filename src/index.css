@@ -36,7 +36,16 @@ a {
 }
 
 .logo > img {
-  height: 100px;
+  height: 80px;
+  width: 150px;
+  padding: 7px;
+}
+.logo img:nth-child(2){
+  height: 50px;
+  width: 150px;
+}
+img:nth-child(3){
+  height: 80px;
   width: 150px;
 }
 
@@ -501,18 +510,19 @@ hr {
 /*--display--*/
 
 .disp-segment {
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 40px;
   display: flex;
   position: relative;
 }
 
 .disp-container {
-  margin-right: 20px;
+  margin-left: 20px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 380px;
+  width: 290px;
+  height: 400px;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
