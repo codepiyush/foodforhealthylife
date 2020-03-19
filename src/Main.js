@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import Biscuits from "./products/biscuit";
+import Healthy from "./products/healthyCookies";
 import Cookie from "./products/cookie";
+import Drinks from "./products/drink";
+import Others from "./products/others"
 import Home from './Home'
 class Main extends React.Component {
   render() {
@@ -17,26 +19,37 @@ class Main extends React.Component {
               <Link to="/products/cookie">Cookie</Link>
             </button>
             <button>
-              <Link to="/products/biscuit">Healthy Cookies</Link>
+              <Link to="/products/healthy">Healthy Cookies</Link>
             </button>
-            <button>Energy Drink</button>
-            <button>Nutri Bar</button>
-            <button>Ice Tea</button>
+            <button>
+              <Link exact to="/products/drinks">Drinks</Link>
+            </button>
+            <button>
+              <Link exact to="/products/others">Others</Link>
+            </button>
           </div>
         </div>
         <div>
           <Switch>
-          <Route exact path="/">
+            <Route exact path="/">
               {" "}
               <Home />{" "}
             </Route>
-            <Route path="/products/biscuit">
+            <Route path="/products/healthy">
               {" "}
-              <Biscuits />{" "}
+              <Healthy />{" "}
             </Route>
             <Route path="/products/cookie">
               {" "}
               <Cookie />{" "}
+            </Route>
+            <Route path="/products/drinks">
+              {" "}
+              <Drinks />{" "}
+            </Route>
+            <Route path="/products/others">
+              {" "}
+              <Others />{" "}
             </Route>
           </Switch>
         </div>

@@ -1,22 +1,21 @@
 import React from "react";
 
-class Display1 extends React.Component {
+class Display extends React.Component {
   constructor() {
     super();
     this.state = {
-      imageno: 0,
-    }
+      imageno: 0
+    };
     this.renderDetails = this.renderDetails.bind(this);
     this.renderImage1 = this.renderImage1.bind(this);
     this.renderImage2 = this.renderImage2.bind(this);
-
   }
 
   renderImage1() {
-    this.setState({ imageno: 0 })
+    this.setState({ imageno: 0 });
   }
   renderImage2() {
-    this.setState({ imageno: 1 })
+    this.setState({ imageno: 1 });
   }
   renderDetails = () => {
     this.props.desc.detail.map(details => {
@@ -36,11 +35,17 @@ class Display1 extends React.Component {
             className="disp-img-sec"
             style={{ padding: "10px", textAlign: "center" }}
           >
-            <button className='next-button' onMouseOver={this.renderImage2} onMouseOut={this.renderImage1}>next</button>
+            <button
+              className="next-button"
+              onMouseOver={this.renderImage2}
+              onMouseOut={this.renderImage1}
+            >
+            <i class="fas fa-angle-right"></i>
+            </button>
             <img
               src={this.props.desc.images[this.state.imageno]}
               alt="pic"
-              width="180px"
+              width={!this.props.desc.width? "180px": this.props.desc.width}
               height="250px"
             />
           </div>
@@ -61,7 +66,6 @@ class Display1 extends React.Component {
                 </div>
               );
             })}
-
           </div>
         </div>
       </div>
@@ -69,4 +73,4 @@ class Display1 extends React.Component {
   }
 }
 
-export default Display1;
+export default Display;

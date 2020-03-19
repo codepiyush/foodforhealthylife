@@ -82,10 +82,11 @@ class Normal extends React.Component {
   }
   render() {
     return (
-      <div className="normal-cookie">
+      <div className="normal-cookie" >
+        <div id="cookie"></div>
         <Link to="/products/cookie/premium">
           <button className="premium-button">
-            <span>Modern Trade Cookies</span>
+            <span><i className="fas fa-crown"></i> &nbsp; Premium Cookies</span>
           </button>
         </Link>
         <div className="display-main">

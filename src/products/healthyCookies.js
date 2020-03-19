@@ -2,16 +2,13 @@ import React from "react";
 import Display from "./display";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
-class Biscuits extends React.Component {
+class Healthy extends React.Component {
   render() {
     return (
       <div>
         <Switch>
-          <Route exact path="/products/biscuit">
+          <Route exact path="/products/healthy">
             <Normal />
-          </Route>
-          <Route exact path="/products/biscuit/premium">
-            <Premium />
           </Route>
         </Switch>
       </div>
@@ -101,11 +98,11 @@ class Normal extends React.Component {
   render() {
     return (
       <div className="normal-biscuit">
-        <Link to="/products/biscuit/premium">
+        {/* <Link to="/products/biscuit/premium">
           <button className="premium-button">
             <span>Healthy Cookies</span>
           </button>
-        </Link>
+        </Link> */}
         <div className="display-main">
           {this.state.biscuit.map(biscuit => {
             return <Display desc={{ ...biscuit }} />;
@@ -117,10 +114,6 @@ class Normal extends React.Component {
     );
   }
 }
-class Premium extends React.Component {
-  render() {
-    return <div>Biscuits</div>;
-  }
-}
 
-export default Biscuits;
+
+export default Healthy;

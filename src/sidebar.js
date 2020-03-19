@@ -15,10 +15,14 @@ class Sidebar extends Component {
         </div>
         <div className="menu">
           <div className="menuContainer">
-            <a href="#products" id="some">
+            <a href="#cookie" id="some">
               <div className="sideMenuExtra">
-                <i class="fas fa-shopping-cart"></i>
-                <p>Our Products</p>
+                <div>
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                  <p>Our Products</p>
+                </div>
               </div>
             </a>
             <div className="sidecontent">
@@ -41,12 +45,24 @@ class Sidebar extends Component {
             </div>
           </div>
           <div className="menuContainer">
-            <i class="fas fa-users"></i>
-            <p>About us</p>
+            <div className="sideMenuLink">
+              <div>
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <p>About us</p>
+              </div>
+            </div>
           </div>
           <div className="menuContainer">
-            <i class="fas fa-envelope"></i>
-            <p>Contact us</p>
+            <div className="sideMenuLink">
+              <div>
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <p>Contact us</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
