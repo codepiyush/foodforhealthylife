@@ -30,7 +30,7 @@ class Display extends React.Component {
   render() {
     return (
       <div className="disp-segment">
-        <div className="disp-container">
+        <div className="disp-container" style={{width: !this.props.desc.OuterWidth? "290px": this.props.desc.OuterWidth}}>
           <div
             className="disp-img-sec"
             style={{ padding: "10px", textAlign: "center" }}
@@ -46,7 +46,7 @@ class Display extends React.Component {
               src={this.props.desc.images[this.state.imageno]}
               alt="pic"
               width={!this.props.desc.width? "180px": this.props.desc.width}
-              height="250px"
+              height={!this.props.desc.height? "250px": this.props.desc.height}
             />
           </div>
           <div className="disp-desc">

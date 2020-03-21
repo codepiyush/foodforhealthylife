@@ -26,6 +26,110 @@ class Normal extends React.Component {
       cookies: [
         {
           images: [
+            require("../images/picture/DryFruits Cookies 300 g.jpg"),
+            require("../images/picture/dryfruitcookies.png")
+          ],
+          name: "Dry Fruit Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        },
+        {
+          images: [
+            require("../images/picture/4. Jeera Cookies 300 g.jpg"),
+            require("../images/picture/JeeraCookies.png")
+          ],
+
+          name: "Jeera Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        },
+        {
+          images: [
+            require("../images/picture/6. BesanPistachio Khatai 300g.jpg"),
+            require("../images/picture/6. BesanPistachio Khatai 300g.jpg")
+          ],
+
+          name: "Besan Pistachio Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        },
+        {
+          images: [
+            require("../images/picture/8. Badam Bites Cookies 300g.jpg"),
+            require("../images/picture/8. Badam Bites Cookies 300g.jpg")
+          ],
+
+          name: "Badam Bites Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        },
+        {
+          images: [
+            require("../images/picture/Product Pic-7.jpg"),
+            require("../images/picture/Product Pic-7.jpg")
+          ],
+
+          name: "Ajwain Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        },
+        {
+          images: [
+            require("../images/picture/Product Pic-9.jpg"),
+            require("../images/picture/Product Pic-9.jpg")
+          ],
+
+          name: "Atta Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        },
+        {
+          images: [
+            require("../images/picture/Product Pic-14.jpg"),
+            require("../images/picture/Product Pic-14.jpg")
+          ],
+
+          name: "Milk Choco Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "220px"
+        }
+      ]
+    };
+
+  }
+  render() {
+    return (
+      <div className="cookie-container">
+        <div className="normal-cookie" >
+          <div id="cookie"></div>
+          {/* <Link to="/products/cookie/premium">
+          <div className="premium-title">
+            <span><i className="fas fa-crown"></i> &nbsp; Premium Cookies</span>
+          </div>
+          </Link> */}
+          <div className="display-main">
+            {this.state.cookies.map(cookie => {
+              return <Display desc={{ ...cookie }} />;
+            })}
+          </div>
+        </div>
+        <div className="premium-sec">
+          <Premium />
+        </div>
+        <div className="gift-sec">
+          <Gift/>
+        </div>
+      </div>
+    );
+  }
+}
+class Premium extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      cookies: [
+        {
+          images: [
             require("../images/picture/R2.png"),
             require("../images/picture/1.png")
           ],
@@ -82,13 +186,13 @@ class Normal extends React.Component {
   }
   render() {
     return (
-      <div className="normal-cookie" >
+      <div className="premium-cookie" >
         <div id="cookie"></div>
-        <Link to="/products/cookie/premium">
-          <button className="premium-button">
+        <div className="title-center">
+          <div className="premium-title">
             <span><i className="fas fa-crown"></i> &nbsp; Premium Cookies</span>
-          </button>
-        </Link>
+          </div>
+        </div>
         <div className="display-main">
           {this.state.cookies.map(cookie => {
             return <Display desc={{ ...cookie }} />;
@@ -98,32 +202,121 @@ class Normal extends React.Component {
     );
   }
 }
-class Premium extends React.Component {
+class Gift extends React.Component {
   constructor() {
     super();
     this.state = {
       cookies: [
         {
           images: [
-            require("../images/picture/R2.png"),
-            require("../images/picture/R2.png")
+            require("../images/picture/G-1.jpg"),
+            require("../images/picture/G-1.jpg")
           ],
-
           name: "Coconut Cookie",
-          detail: ["Hand Crafted", "Eggless"]
-        }
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
+        {
+          images: [
+            require("../images/picture/G-2.jpg"),
+            require("../images/picture/G-2.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
+        {
+          images: [
+            require("../images/picture/G-3.jpg"),
+            require("../images/picture/G-3.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
+        {
+          images: [
+            require("../images/picture/G-4.jpg"),
+            require("../images/picture/G-4.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
+        {
+          images: [
+            require("../images/picture/G-5.jpg"),
+            require("../images/picture/G-5.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
+        {
+          images: [
+            require("../images/picture/G-6.jpg"),
+            require("../images/picture/G-6.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
+        {
+          images: [
+            require("../images/picture/G-7.jpg"),
+            require("../images/picture/G-7.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        }, {
+          images: [
+            require("../images/picture/G-8.jpg"),
+            require("../images/picture/G-8.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        }, {
+          images: [
+            require("../images/picture/G-9.jpg"),
+            require("../images/picture/G-9.jpg")
+          ],
+          name: "Coconut Cookie",
+          detail: ["Hand Crafted", "Eggless"],
+          width: "320px",
+          height: "210px",
+          OuterWidth: "350px"
+        },
       ]
     };
   }
   render() {
     return (
-      <div className="normal-cookie">
-        <Link to="/products/cookie/premium">
-          <button className="premium-button">
-            <span>Premium Cookies</span>
-          </button>
-        </Link>
-        <div>
+      <div className="gift-pack" >
+        <div id="cookie"></div>
+        <div className="title-center">
+          <div className="gift-title">
+            <span><i class="fas fa-gifts"></i> &nbsp; Gift Pack</span>
+          </div>
+        </div>
+        <div className="display-main">
           {this.state.cookies.map(cookie => {
             return <Display desc={{ ...cookie }} />;
           })}

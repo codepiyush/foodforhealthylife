@@ -405,7 +405,7 @@ img:nth-child(3) {
 
 .main {
   margin-left: 200px;
-  height: 150vh;
+  min-height: 150vh;
 }
 
 .nav2 {
@@ -464,7 +464,14 @@ hr {
   margin-top: 50px;
   margin-left: 60px;
 }
-
+.premium-cookie {
+  margin-top: 10px;
+  margin-left: 60px;
+}
+.gift-pack {
+  margin-top: 10px;
+  margin-left: 60px;
+}
 .display-main {
   margin-top: 50px;
   display: flex;
@@ -477,39 +484,65 @@ hr {
   margin-left: 60px;
 }
 
-.premium-button {
+.premium-title {
   color: #ffffff;
   position: relative;
   transition-duration: 0.5s;
-  padding: 7px;
-  font-size: 21px;
-  /* font-weight: bold;  */
-  width: 300px;
+  padding: 7px 20px;
+  text-align: center;
+  font-size: 23px;
+  width: 400px;
   border: none;
   font-family: "Titillium Web", sans-serif;
   border-radius: 5px;
   outline: none;
-  cursor: pointer;
   transition-duration: all 0.5s;
   background-color: #009e7f;
   border: 2px solid #009e7f;
   box-sizing: border-box;
-  /* background: radial-gradient(90% 50px at right, #a37320, #efea7e, #a37320); */
 }
-
-.premium-button span {
-  cursor: pointer;
+.premium-title span {
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.premium-button>span>i {
+.premium-title>span>i {
   color: #ffdd1b;
-  color: radial-gradient(90% 50px at right, #a37320, #efea7e, #a37320);
+  font-size: 26px;
+}
+.title-center {
+  display: flex;
+  justify-content: center;
+}
+.gift-title {
+  color: #ffffff;
+  position: relative;
+  transition-duration: 0.5s;
+  padding: 7px 20px;
+  text-align: center;
+  font-size: 23px;
+  width: 400px;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 5px;
+  outline: none;
+  transition-duration: all 0.5s;
+  background-color: #009e7f;
+  border: 2px solid #009e7f;
+  box-sizing: border-box;
+}
+.gift-title span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.premium-button span::after {
+.gift-title>span>i {
+  color: #ff0000;
+  font-size: 26px;
+}
+/* .premium-button span::after {
   content: "   \00bb";
   position: absolute;
   opacity: 0;
@@ -526,12 +559,11 @@ hr {
 .premium-button:hover {
   background-color: #ffffff;
   color: #009e7f;
-  /* font-weight: bold; */
 }
 
 .premium-button:hover span {
   padding-right: 25px;
-}
+} */
 
 /*--display--*/
 
@@ -547,7 +579,6 @@ hr {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 290px;
   height: 400px;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.100);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.100);
