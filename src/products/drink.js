@@ -22,7 +22,7 @@ class Normal extends React.Component {
       drinks: [
         {
           images: [
-            require("../images/picture/Ice Tea - Latest.jpg"),
+            require("../images/picture/Ice Tea - Latest.jpg")
             // require("../images/picture/BuckN'Flax Cookies 200g.jpg")
           ],
           name: "Ice Tea",
@@ -30,13 +30,92 @@ class Normal extends React.Component {
         },
         {
           images: [
-            require("../images/picture/Energy Drink.jpg"),
+            require("../images/picture/Energy Drink.jpg")
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Energy Drink",
           detail: ["Hand Made Classics", "Eggless"]
         },
-        
+        {
+          images: [
+            require("../images/picture/edited3.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Bounce Back",
+          detail: ["Healthy Energy Drink", "Orange Flaour"]
+        },
+        {
+          images: [
+            require("../images/picture/edited4.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Bounce Back",
+          detail: ["Healthy Energy Drink", "BlueBerry Flavour"]
+        },
+        {
+          images: [
+            require("../images/picture/edited5.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Bounce Back",
+          detail: ["Healthy Energy Drink", "Lemon Flavour"]
+        },
+        {
+          images: [
+            require("../images/picture/edited2.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "BlueBerry Flavour",
+          detail: ["Brewed Ice Tea"]
+        },
+        {
+          images: [
+            require("../images/picture/edited6.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Peach Smooth Flavour",
+          detail: ["Brewed Ice Tea"]
+        },
+        {
+          images: [
+            require("../images/picture/edited1.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Refreshing Cola Flavour",
+          detail: ["Brewed Ice Tea"]
+        },
+        {
+          images: [
+            require("../images/picture/edited7.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Strawberry Flavour",
+          detail: ["Brewed Ice Tea"]
+        },
+        {
+          images: [
+            require("../images/picture/edited8.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Lemon Mojito Flavour",
+          detail: ["Brewed Ice Tea"]
+        },
+        {
+          images: [
+            require("../images/picture/edited9.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Original Tea",
+          detail: ["Brewed Ice Tea", "No added flavour"]
+        },
+        {
+          images: [
+            require("../images/picture/edited10.png")
+            // require("../images/picture/ChocoChip Cookies 200g.jpg")
+          ],
+          name: "Green Apple Flavour",
+          detail: ["Brewed Ice Tea", "Smooth Flavour"]
+        }
       ]
     };
   }
@@ -59,6 +138,5 @@ class Normal extends React.Component {
     );
   }
 }
-
 
 export default Drinks;
