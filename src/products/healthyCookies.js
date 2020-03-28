@@ -1,17 +1,21 @@
 import React from "react";
 import Display from "./display";
+import TopNav from '../nav';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 class Healthy extends React.Component {
   render() {
     return (
-      <div>
-        <Switch>
-          <Route exact path="/products/healthy">
-            <Normal />
-          </Route>
-        </Switch>
-      </div>
+      <React.Fragment>
+        <TopNav />
+        <div>
+          <Switch>
+            <Route exact path="/products/healthy">
+              <Normal />
+            </Route>
+          </Switch>
+        </div>
+      </React.Fragment>
     );
   }
 }

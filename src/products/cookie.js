@@ -1,20 +1,24 @@
 import React from "react";
 import Display from "./display";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import TopNav from '../nav';
 
 class Cookie extends React.Component {
   render() {
     return (
-      <div>
-        <Switch>
-          <Route exact path="/products/cookie">
-            <Normal />
-          </Route>
-          <Route exact path="/products/cookie/premium">
-            <Premium />
-          </Route>
-        </Switch>
-      </div>
+      <React.Fragment>
+        <TopNav />
+        <div>
+          <Switch>
+            <Route exact path="/products/cookie">
+              <Normal />
+            </Route>
+            <Route exact path="/products/cookie/premium">
+              <Premium />
+            </Route>
+          </Switch>
+        </div>
+      </React.Fragment>
     );
   }
 }
@@ -102,11 +106,6 @@ class Normal extends React.Component {
       <div className="cookie-container">
         <div className="normal-cookie" >
           <div id="cookie"></div>
-          {/* <Link to="/products/cookie/premium">
-          <div className="premium-title">
-            <span><i className="fas fa-crown"></i> &nbsp; Premium Cookies</span>
-          </div>
-          </Link> */}
           <div className="display-main">
             {this.state.cookies.map(cookie => {
               return <Display desc={{ ...cookie }} />;
@@ -117,7 +116,7 @@ class Normal extends React.Component {
           <Premium />
         </div>
         <div className="gift-sec">
-          <Gift/>
+          <Gift />
         </div>
       </div>
     );
@@ -186,8 +185,8 @@ class Premium extends React.Component {
   }
   render() {
     return (
-      <div className="premium-cookie" >
-        <div id="cookie"></div>
+      <div className="premium-cookie" id="premium-cookie">
+        <div ></div>
         <div className="title-center">
           <div className="premium-title">
             <span><i className="fas fa-crown"></i> &nbsp; Premium Cookies</span>
@@ -310,7 +309,7 @@ class Gift extends React.Component {
   render() {
     return (
       <div className="gift-pack" >
-        <div id="cookie"></div>
+        <div id="giftpack"></div>
         <div className="title-center">
           <div className="gift-title">
             <span><i class="fas fa-gifts"></i> &nbsp; Gift Pack</span>

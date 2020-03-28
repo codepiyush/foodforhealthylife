@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
+// import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 class Sidebar extends Component {
-  onClickSport() {
-    document.getElementById("some").click();
-  }
+  
   render() {
     return (
       <div className="sidebar">
@@ -15,31 +15,29 @@ class Sidebar extends Component {
         </div>
         <div className="menu">
           <div className="menuContainer">
-            <a href="#cookie" id="some">
-              <div className="sideMenuExtra">
-                <div>
-                  <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div>
-                  <p>Our Products</p>
-                </div>
+            <div className="sideMenuExtra">
+              <div>
+                <i class="fas fa-shopping-cart"></i>
               </div>
-            </a>
+              <div>
+                <p>Our Products</p>
+              </div>
+            </div>
             <div className="sidecontent">
-              <div className="smitem" onClick={this.onClickSport}>
+              <div className="smitem" >
                 {" "}
                 <Link to="/products/cookie">Cookie</Link>
               </div>
-              <div className="smitem" id="sportsd" onClick={this.onClickSport}>
+              <div className="smitem" id="sportsd" >
                 Sports Drinks
               </div>
-              <div className="smitem" onClick={this.onClickSport}>
+              <div className="smitem" >
                 Ice Tea
               </div>
-              <div className="smitem" onClick={this.onClickSport}>
+              <div className="smitem" >
                 <Link to="/products/biscuit">Biscuit</Link>
               </div>
-              <div className="smitem" onClick={this.onClickSport}>
+              <div className="smitem" >
                 Nutri Bar
               </div>
             </div>
@@ -50,7 +48,7 @@ class Sidebar extends Component {
                 <i class="fas fa-users"></i>
               </div>
               <div>
-                <p>About us</p>
+                <p><Link to="/about#about">About us</Link></p>
               </div>
             </div>
           </div>

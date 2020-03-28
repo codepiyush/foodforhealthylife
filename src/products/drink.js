@@ -1,17 +1,21 @@
 import React from "react";
 import Display from "./display";
+import TopNav from '../nav';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 class Drinks extends React.Component {
   render() {
     return (
-      <div>
-        <Switch>
-          <Route exact path="/products/drinks">
-            <Normal />
-          </Route>
-        </Switch>
-      </div>
+      <React.Fragment>
+        <TopNav />
+        <div>
+          <Switch>
+            <Route exact path="/products/drinks">
+              <Normal />
+            </Route>
+          </Switch>
+        </div>
+      </React.Fragment>
     );
   }
 }
@@ -20,22 +24,6 @@ class Normal extends React.Component {
     super();
     this.state = {
       drinks: [
-        {
-          images: [
-            require("../images/picture/Ice Tea - Latest.jpg")
-            // require("../images/picture/BuckN'Flax Cookies 200g.jpg")
-          ],
-          name: "Ice Tea",
-          detail: ["Hand Made Classics", "Eggless"]
-        },
-        {
-          images: [
-            require("../images/picture/Energy Drink.jpg")
-            // require("../images/picture/ChocoChip Cookies 200g.jpg")
-          ],
-          name: "Energy Drink",
-          detail: ["Hand Made Classics", "Eggless"]
-        },
         {
           images: [
             require("../images/picture/edited3.png")

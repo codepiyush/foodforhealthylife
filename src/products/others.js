@@ -1,6 +1,7 @@
 import React from "react";
 import Display from "./display";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import TopNav from '../nav'
 
 class Others extends React.Component {
     render() {
@@ -72,20 +73,17 @@ class Normal extends React.Component {
     }
     render() {
         return (
-            <div className="normal-biscuit">
-                {/* <Link to="/products/biscuit/premium">
-          <button className="premium-button">
-            <span>Healthy Cookies</span>
-          </button>
-        </Link> */}
-                <div className="display-main">
-                    {this.state.products.map(product => {
-                        return <Display desc={{ ...product }} />;
-                    })}
-                    {/* <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/>
-                      <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/> */}
+            <React.Fragment>
+                <TopNav />
+                <div className="normal-biscuit">
+
+                    <div className="display-main">
+                        {this.state.products.map(product => {
+                            return <Display desc={{ ...product }} />;
+                        })}
+                    </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }
