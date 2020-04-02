@@ -58,7 +58,7 @@ class Sidebar extends Component {
                 <i class="fas fa-envelope"></i>
               </div>
               <div>
-                <p>Contact us</p>
+                <p> <a href="#contact"> Contact us </a></p>
               </div>
             </div>
           </div>

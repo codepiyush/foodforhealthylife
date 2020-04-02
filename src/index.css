@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -513,7 +512,6 @@ hr {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
-
 }
 
 .img-cont>img {
@@ -530,7 +528,6 @@ hr {
   height: 100%;
   width: 100%;
   transition-duration: .5s;
- 
 }
 
 .home-img-text {
@@ -543,14 +540,17 @@ hr {
   border: 2px solid #018a6e;
   border-radius: 7px;
 }
-.home-img-text:hover{
+
+.home-img-text:hover {
   background-color: #ffffff;
   color: #009e7f;
 }
-.img-cont:hover>img{
+
+.img-cont:hover>img {
   filter: blur(5px);
   z-index: -1;
 }
+
 .img-cont:hover>.overcast {
   display: flex;
   background: #0707078c;
@@ -558,9 +558,14 @@ hr {
 }
 
 @keyframes appear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
 .normal-biscuit {
   margin-top: 80px;
   margin-left: 60px;
@@ -727,15 +732,15 @@ hr {
 .detail-box {
   display: none;
   background-color: #ffffff;
-  width: 250px;
-  height: 380px;
+  width: 550px;
+  height: 600px;
   position: absolute;
   top: 0;
   z-index: 2;
   left: 250px;
-  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px -1px #009e7f;
+  -moz-box-shadow: 0px 0px 5px -1px #009e7f;
+  box-shadow: 0px 0px 5px -1px #009e7f;
 }
 
 .info-icon:hover .detail-box {
@@ -764,8 +769,7 @@ hr {
   background-color: #ffffff;
 }
 
-/* about us */ 
-
+/* about us */
 
 .about-top {
   font-family: 'Playfair Display', serif;
@@ -778,12 +782,14 @@ hr {
   justify-content: center;
   letter-spacing: 2px;
 }
+
 .about-main {
   background-color: #ffffff;
   font-family: 'Playfair Display', serif;
-  padding: 50px;
+  padding: 50px 250px 50px 150px;
 }
-.about-main>h2{
+
+.about-main>h2 {
   color: #018a6e;
   text-align: center;
   font-size: 2em;
@@ -792,37 +798,119 @@ hr {
   margin-bottom: 20px;
   border-bottom: 1px solid #009e7f;
 }
+
 .about-main>img {
   float: left;
-  margin:  0px 15px 15px 0px;
+  margin: 0px 15px 15px 0px;
 }
-.about-main p{
+
+.about-main p {
   color: #333;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.25em;
-  padding-bottom: 10px;
-  
+  padding-bottom: 30px;
 }
+
 .about-main p>first {
- float: left;
- font-family: 'Playfair Display', serif;
- font-size: 300%;
- width: .7em;
- line-height: 80%;
- color: #009e7f;
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 300%;
+  width: .7em;
+  line-height: 80%;
+  color: #009e7f;
 }
-.about-main p>i{
+
+.about-main p>i {
   color: black;
   font-weight: 500;
 }
+
 .about-main h3 {
   text-align: center;
   font-size: 1.6em;
   font-weight: 500;
 }
-.weight-500{
+
+.weight-500 {
   color: black;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 500;
+}
+
+/* footer */
+
+.footer {
+  margin-left: 200px;
+  min-height: 400px;
+  color: #ffffff;
+  /* padding: 20px; */
+  background-color: #018a6e;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-head {
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding: 20px 20px 5px 20px;
+  border-bottom: 1px solid white;
+}
+
+.brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  flex-wrap: wrap;
+}
+
+.brand-logo>img {
+  margin: 15px 50px 0px 50px;
+}
+
+.contact {
+  margin: 30px 0px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-head {
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding: 0px 20px 5px 20px;
+  border-bottom: 1px solid white;
+}
+.contact-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-body div {
+  padding: 20px 2vh 20px 2vh;
+  font-size: 20px;
+}
+.contact-body div>a>i{
+  font-size: 28px;
+  padding: 7px;
+  /* color: #cd011e; */
+}
+.contact-body div>i{
+  font-size: 28px;
+  padding: 7px;
+  color: #5deccf;
+}
+.copyright {
+  padding: 1em;
+  text-align: center;
+  background-color: #004c3d;
 }
