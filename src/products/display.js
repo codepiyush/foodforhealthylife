@@ -1,4 +1,5 @@
 import React from "react";
+import DetailBox from './Datail-box';
 
 class Display extends React.Component {
   constructor() {
@@ -56,7 +57,9 @@ class Display extends React.Component {
               </div>
               <div className="info-icon">
                 <i class="fas fa-info"></i>
-                <div className="detail-box"></div>
+                <div className="detail-box">
+                  <DetailBox/>
+                </div>
               </div>
             </div>
             {this.props.desc.detail.map(details => {
