@@ -732,8 +732,8 @@ hr {
 .detail-box {
   display: none;
   background-color: #ffffff;
-  width: 550px;
-  height: 600px;
+  width: 250px;
+  height: 300px;
   position: absolute;
   top: 0;
   z-index: 2;
@@ -767,6 +767,39 @@ hr {
 .next-button:hover {
   color: #009e7f;
   background-color: #ffffff;
+}
+
+/*detail box*/ 
+
+.detail-head {
+  padding: 10px 10px 10px 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  background-color: #009e7f;
+  border-bottom: 2px solid #009e7f;
+}
+.detail-body>p {
+  padding: 5px;
+  color: rgb(65, 65, 65);
+  font-size: 11px;
+}
+.calorie {
+  padding: 10px;
+  background-color: #009e7f;
+  color: white;
+  text-align: center;
+}
+
+.nutrition {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  color:#333;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.nutri-name p, .nutri-value p {
+  padding: 4px;
 }
 
 /* about us */
@@ -846,7 +879,7 @@ hr {
   color: #ffffff;
   /* padding: 20px; */
   background-color: #018a6e;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 2000px 2000px 0px 0px/80px 80px 0px 0px;
 }
 
 .brand {
