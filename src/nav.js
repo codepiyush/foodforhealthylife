@@ -19,8 +19,8 @@ class TopNav extends React.Component {
                     <button>
                         <Link exact to="/products/drinks">Drinks</Link>
                     </button>
-                    <button>
-                        <Link exact to="/products/others">Others</Link>
+                    <button className="highlight">
+                        <Link exact to="/products/others">Upcomming Products</Link>
                     </button>
                 </div>
             </div>

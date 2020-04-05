@@ -6,13 +6,17 @@ import TopNav from '../nav'
 class Others extends React.Component {
     render() {
         return (
-            <div>
-                <Switch>
-                    <Route exact path="/products/others">
-                        <Normal />
-                    </Route>
-                </Switch>
-            </div>
+            <React.Fragment>
+            <div id="others"></div>
+                <TopNav />
+                <div>
+                    <Switch>
+                        <Route exact path="/products/others">
+                            <Normal />
+                        </Route>
+                    </Switch>
+                </div>
+            </React.Fragment>
         );
     }
 }
@@ -28,7 +32,27 @@ class Normal extends React.Component {
                     ],
                     name: "Puffy Hearts",
                     detail: ["Hand Made Classics", "Eggless"],
-                    width: "220px"
+                    width: "220px",
+                    detailBox: {
+                        type: "upcomming",
+                        calories: 538,
+                        name: [
+                            "Total Fat",
+                            "Total Carbohydrates",
+                            "Sugar",
+                            "Protein",
+                            "Trans Fat",
+                            "Saturated Fat"
+                        ],
+                        value: [
+                            "30gm",
+                            "58gm",
+                            "14gm",
+                            "8gm",
+                            "5gm",
+                            "40-60gm"
+                        ]
+                    }
                 },
                 {
                     images: [
@@ -37,7 +61,27 @@ class Normal extends React.Component {
                     ],
                     name: "Cake Rusk",
                     detail: ["Hand Made Classics", "Eggless"],
-                    width: "220px"
+                    width: "220px",
+                    detailBox: {
+                        type: "upcomming",
+                        calories: 538,
+                        name: [
+                            "Total Fat",
+                            "Total Carbohydrates",
+                            "Sugar",
+                            "Protein",
+                            "Trans Fat",
+                            "Saturated Fat"
+                        ],
+                        value: [
+                            "30gm",
+                            "58gm",
+                            "14gm",
+                            "8gm",
+                            "5gm",
+                            "40-60gm"
+                        ]
+                    }
 
                 },
                 {
@@ -47,7 +91,27 @@ class Normal extends React.Component {
                     ],
                     name: "Fruit Cake",
                     detail: ["Hand Made Classics", "Eggless"],
-                    width: "220px"
+                    width: "220px",
+                    detailBox: {
+                        type: "upcomming",
+                        calories: 538,
+                        name: [
+                            "Total Fat",
+                            "Total Carbohydrates",
+                            "Sugar",
+                            "Protein",
+                            "Trans Fat",
+                            "Saturated Fat"
+                        ],
+                        value: [
+                            "30gm",
+                            "58gm",
+                            "14gm",
+                            "8gm",
+                            "5gm",
+                            "40-60gm"
+                        ]
+                    }
 
                 },
                 {
@@ -57,7 +121,27 @@ class Normal extends React.Component {
                     ],
                     name: "Coconut Macaroon",
                     detail: ["Hand Made Classics", "Eggless"],
-                    width: "220px"
+                    width: "220px",
+                    detailBox: {
+                        type: "upcomming",
+                        calories: 538,
+                        name: [
+                            "Total Fat",
+                            "Total Carbohydrates",
+                            "Sugar",
+                            "Protein",
+                            "Trans Fat",
+                            "Saturated Fat"
+                        ],
+                        value: [
+                            "30gm",
+                            "58gm",
+                            "14gm",
+                            "8gm",
+                            "5gm",
+                            "40-60gm"
+                        ]
+                    }
                 },
                 {
                     images: [
@@ -66,7 +150,27 @@ class Normal extends React.Component {
                     ],
                     name: "Puff fans",
                     detail: ["Hand Made Classics", "Eggless"],
-                    width: "220px"
+                    width: "220px",
+                    detailBox: {
+                        type: "upcomming",
+                        calories: 538,
+                        name: [
+                            "Total Fat",
+                            "Total Carbohydrates",
+                            "Sugar",
+                            "Protein",
+                            "Trans Fat",
+                            "Saturated Fat"
+                        ],
+                        value: [
+                            "30gm",
+                            "58gm",
+                            "14gm",
+                            "8gm",
+                            "5gm",
+                            "40-60gm"
+                        ]
+                    }
                 },
             ]
         };
@@ -74,9 +178,7 @@ class Normal extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <TopNav />
                 <div className="normal-biscuit">
-
                     <div className="display-main">
                         {this.state.products.map(product => {
                             return <Display desc={{ ...product }} />;

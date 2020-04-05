@@ -26,19 +26,16 @@ class Sidebar extends Component {
             <div className="sidecontent">
               <div className="smitem" >
                 {" "}
-                <Link to="/products/cookie">Cookie</Link>
+                <Link to="/products/cookie#cookie">Cookie</Link>
               </div>
               <div className="smitem" id="sportsd" >
-                Sports Drinks
+              <Link to="/products/drinks#drinks">Drinks</Link>
               </div>
               <div className="smitem" >
-                Ice Tea
+              <Link to="/products/healthy#healthy">Healthy Cookies</Link>
               </div>
               <div className="smitem" >
-                <Link to="/products/biscuit">Biscuit</Link>
-              </div>
-              <div className="smitem" >
-                Nutri Bar
+                <Link to="/products/others#others">Upcomming Products</Link>
               </div>
             </div>
           </div>

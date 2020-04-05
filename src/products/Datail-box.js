@@ -1,33 +1,86 @@
 import React from 'react';
 
 class DetailBox extends React.Component {
-    render() {
+
+    constructor() {
+        super()
+    }
+
+    normal() {
         return (
-            <div className="detail-container">
+            <div className="normal-detail">
                 <div className="detail-head">
                     Nutrition Fact
                 </div>
                 <div className="detail-body">
                     <p>*Per 100gm of Product (approx.)</p>
                     <div className="calorie">
-                        Calories 540 Kcal
+                        Calories {this.props.detail.calories} Kcal
                     </div>
                     <div className="nutrition">
                         <div className="nutri-name">
-                            <p>Total Fat</p>
-                            <p>Total Carbohydrate</p>
-                            <p>Sugar</p>
-                            <p>Protein</p>
+                            {this.props.detail.name.map(name => {
+                                return (
+                                    <p>{name}</p>
+                                )
+                            })}
+
                         </div>
                         <div className="nutri-value">
-                            <p>30gm</p>
-                            <p>58gm</p>
-                            <p>12gm</p>
-                            <p>8gm</p>
+                            {this.props.detail.value.map(value => {
+                                return (
+                                    <p>{value}</p>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
             </div>
+        )
+    }
+
+    renderDetail() {
+        if (this.props.detail.type && this.props.detail.type == "normal" || this.props.detail.type == "upcomming") {
+            return (
+                this.normal()
+            )
+        }
+        else if (this.props.detail.type && this.props.detail.type == "premium") {
+            return (
+                <div className="prm-detail">
+                    <p>"{this.props.detail.line}"</p>
+                </div>
+            )
+        }
+        else if (this.props.detail.type && this.props.detail.type == "healthy") {
+            return (
+                <div className="healthy-detail">
+                    <div className="detail-head">
+                        Nutrition Facts
+                    </div>
+                    <div className="detail-body">
+                        <div className="nutri-facts">
+                            {this.props.detail.nutriFacts.map(fact => {
+                                return (
+                                    <p>- {fact}</p>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+    }
+    componentDidMount() {
+        console.log(this.props.detail.calories)
+    }
+
+
+    render() {
+        return (
+            <React.Fragment>
+                {this.renderDetail()}
+            </React.Fragment>
         )
     }
 }

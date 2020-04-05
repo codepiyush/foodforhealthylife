@@ -58,7 +58,7 @@ class Display extends React.Component {
               <div className="info-icon">
                 <i class="fas fa-info"></i>
                 <div className="detail-box">
-                  <DetailBox/>
+                  <DetailBox detail={this.props.desc.detailBox}/>
                 </div>
               </div>
             </div>

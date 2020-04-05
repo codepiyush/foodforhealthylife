@@ -7,6 +7,7 @@ class Drinks extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <div id="drinks"></div>
         <TopNav />
         <div>
           <Switch>
@@ -30,7 +31,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Bounce Back",
-          detail: ["Healthy Energy Drink", "Orange Flaour"]
+          detail: ["Healthy Energy Drink", "Orange Flaour"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -38,7 +58,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Bounce Back",
-          detail: ["Healthy Energy Drink", "BlueBerry Flavour"]
+          detail: ["Healthy Energy Drink", "BlueBerry Flavour"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -46,7 +85,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Bounce Back",
-          detail: ["Healthy Energy Drink", "Lemon Flavour"]
+          detail: ["Healthy Energy Drink", "Lemon Flavour"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -54,7 +112,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "BlueBerry Flavour",
-          detail: ["Brewed Ice Tea"]
+          detail: ["Brewed Ice Tea"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -62,7 +139,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Peach Smooth Flavour",
-          detail: ["Brewed Ice Tea"]
+          detail: ["Brewed Ice Tea"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -70,7 +166,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Refreshing Cola Flavour",
-          detail: ["Brewed Ice Tea"]
+          detail: ["Brewed Ice Tea"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -78,7 +193,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Strawberry Flavour",
-          detail: ["Brewed Ice Tea"]
+          detail: ["Brewed Ice Tea"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -86,7 +220,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Lemon Mojito Flavour",
-          detail: ["Brewed Ice Tea"]
+          detail: ["Brewed Ice Tea"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -94,7 +247,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Original Tea",
-          detail: ["Brewed Ice Tea", "No added flavour"]
+          detail: ["Brewed Ice Tea", "No added flavour"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -102,7 +274,26 @@ class Normal extends React.Component {
             // require("../images/picture/ChocoChip Cookies 200g.jpg")
           ],
           name: "Green Apple Flavour",
-          detail: ["Brewed Ice Tea", "Smooth Flavour"]
+          detail: ["Brewed Ice Tea", "Smooth Flavour"],
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         }
       ]
     };
@@ -110,17 +301,10 @@ class Normal extends React.Component {
   render() {
     return (
       <div className="normal-biscuit">
-        {/* <Link to="/products/biscuit/premium">
-          <button className="premium-button">
-            <span>Healthy Cookies</span>
-          </button>
-        </Link> */}
         <div className="display-main">
           {this.state.drinks.map(drink => {
             return <Display desc={{ ...drink }} />;
           })}
-          {/* <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/>
-                      <Display desc = {{imageUrl: require('../images/picture/R2.png'), name: 'Coconut Cookie', detail: ['Hand Crafted', 'Eggless', "Suger Free"]}}/> */}
         </div>
       </div>
     );

@@ -7,6 +7,7 @@ class Cookie extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <div id="cookie"></div>
         <TopNav />
         <div>
           <Switch>
@@ -35,7 +36,27 @@ class Normal extends React.Component {
           ],
           name: "Dry Fruit Cookie",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -45,7 +66,27 @@ class Normal extends React.Component {
 
           name: "Jeera Cookies",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -55,7 +96,27 @@ class Normal extends React.Component {
 
           name: "Besan Pistachio Cookies",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -65,7 +126,27 @@ class Normal extends React.Component {
 
           name: "Badam Bites Cookies",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -75,7 +156,27 @@ class Normal extends React.Component {
 
           name: "Ajwain Cookies",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -85,7 +186,27 @@ class Normal extends React.Component {
 
           name: "Atta Cookies",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -95,7 +216,27 @@ class Normal extends React.Component {
 
           name: "Milk Choco Cookies",
           detail: ["Hand Crafted", "Eggless"],
-          width: "220px"
+          width: "220px",
+          detailBox: {
+            type: "normal",
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         }
       ]
     };
@@ -105,7 +246,6 @@ class Normal extends React.Component {
     return (
       <div className="cookie-container">
         <div className="normal-cookie" >
-          <div id="cookie"></div>
           <div className="display-main">
             {this.state.cookies.map(cookie => {
               return <Display desc={{ ...cookie }} />;
@@ -133,7 +273,11 @@ class Premium extends React.Component {
             require("../images/picture/1.png")
           ],
           name: "Coconut Cookie",
-          detail: ["Hand Crafted", "Eggless"]
+          detail: ["Hand Crafted", "Eggless"],
+          detailBox: {
+            type: "premium",
+            line: "Oozing with rich desiccated cocunut filling melting in the mouth & crunchy under the teeth",
+          }
         },
         {
           images: [
@@ -142,7 +286,11 @@ class Premium extends React.Component {
           ],
 
           name: "Almond Finger Cookies",
-          detail: ["Hand Crafted", "Eggless"]
+          detail: ["Hand Crafted", "Eggless"],
+          detailBox: {
+            type: "premium",
+            line: "Premium Almonds slice and goodness of Milk Butter come together for these dreamy cookies",
+          }
         },
         {
           images: [
@@ -151,7 +299,11 @@ class Premium extends React.Component {
           ],
 
           name: "Oatmeal Chocochip Cookies",
-          detail: ["Hand Crafted", "Eggless"]
+          detail: ["Hand Crafted", "Eggless"],
+          detailBox: {
+            type: "premium",
+            line: "Yumminess of cookies with Richness of Oatmeal Crushed Peanuts with twist of Chocochips",
+          }
         },
         {
           images: [
@@ -160,7 +312,24 @@ class Premium extends React.Component {
           ],
 
           name: "Milky Chocochip Cookies",
-          detail: ["Hand Crafted", "Eggless"]
+          detail: ["Hand Crafted", "Eggless"],
+          detailBox: {
+            type: "premium",
+            line: "Luscious chunks of Chocochip and Milk Butter are united for an ‘insanly great’ taste",
+          }
+        },
+        {
+          images: [
+            require("../images/picture/R11.png"),
+            require("../images/picture/10.png")
+          ],
+
+          name: "Desi Ghee Atta Cookies",
+          detail: ["Hand Crafted", "Eggless"],
+          detailBox: {
+            type: "premium",
+            line: "This traditional Punjabi Atta Cookies is Crafted for you with Desi Ghee && love",
+          }
         },
         {
           images: [
@@ -169,17 +338,13 @@ class Premium extends React.Component {
           ],
 
           name: "Basen Pistachio Khatai",
-          detail: ["Hand Crafted", "Eggless"]
+          detail: ["Hand Crafted", "Eggless"],
+          detailBox: {
+            type: "premium",
+            line: "Deliciousness of Nankhatai with a twist of Pistachio flakes",
+          }
         },
-        {
-          images: [
-            require("../images/picture/R11.png"),
-            require("../images/picture/10.png")
-          ],
 
-          name: "Basen Pistachio Khatai",
-          detail: ["Hand Crafted", "Eggless"]
-        }
       ]
     };
   }
@@ -215,7 +380,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -226,7 +410,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -237,7 +440,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -248,7 +470,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -259,7 +500,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -270,7 +530,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
         {
           images: [
@@ -281,7 +560,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         }, {
           images: [
             require("../images/picture/G-8.jpg"),
@@ -291,7 +589,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         }, {
           images: [
             require("../images/picture/G-9.jpg"),
@@ -301,7 +618,26 @@ class Gift extends React.Component {
           detail: ["Hand Crafted", "Eggless"],
           width: "320px",
           height: "210px",
-          OuterWidth: "350px"
+          OuterWidth: "350px",
+          detailBox: {
+            calories: 538,
+            name: [
+              "Total Fat",
+              "Total Carbohydrates",
+              "Sugar",
+              "Protein",
+              "Trans Fat",
+              "Saturated Fat"
+            ],
+            value: [
+              "30gm",
+              "58gm",
+              "14gm",
+              "8gm",
+              "5gm",
+              "40-60gm"
+            ]
+          }
         },
       ]
     };
