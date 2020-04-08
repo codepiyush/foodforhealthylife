@@ -37,6 +37,7 @@ class Sidebar extends Component {
               <div className="smitem" >
                 <Link to="/products/others#others">Upcomming Products</Link>
               </div>
+              
             </div>
           </div>
           <div className="menuContainer">
@@ -56,6 +57,16 @@ class Sidebar extends Component {
               </div>
               <div>
                 <p> <a href="#contact"> Contact us </a></p>
+              </div>
+            </div>
+          </div>
+          <div className="menuContainer">
+            <div className="sideMenuLink">
+              <div>
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <p><Link to="/presence">OurPresence</Link></p>
               </div>
             </div>
           </div>

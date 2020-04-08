@@ -40,7 +40,7 @@ class DetailBox extends React.Component {
     }
 
     renderDetail() {
-        if (this.props.detail.type && this.props.detail.type == "normal" || this.props.detail.type == "upcomming") {
+        if (this.props.detail.type && this.props.detail.type == "normal" || this.props.detail.type == "upcomming" || this.props.detail.type == "iceTea") {
             return (
                 this.normal()
             )
@@ -52,7 +52,7 @@ class DetailBox extends React.Component {
                 </div>
             )
         }
-        else if (this.props.detail.type && this.props.detail.type == "healthy") {
+        else if (this.props.detail.type && this.props.detail.type == "healthy" || this.props.detail.type == "energyDrink") {
             return (
                 <div className="healthy-detail">
                     <div className="detail-head">

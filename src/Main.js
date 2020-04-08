@@ -5,7 +5,8 @@ import Cookie from "./products/cookie";
 import Drinks from "./products/drink";
 import Others from "./products/others"
 import Home from './Home';
-import About from './About'
+import About from './About';
+import Presence from './Presence'
 class Main extends React.Component {
   render() {
     return (
@@ -34,6 +35,10 @@ class Main extends React.Component {
           <Route path="/about">
             {" "}
             <About />{" "}
+          </Route>
+          <Route path="/presence">
+            {" "}
+            <Presence />{" "}
           </Route>
         </Switch>
       </div>

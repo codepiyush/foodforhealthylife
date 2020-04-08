@@ -33,7 +33,8 @@ class Normal extends React.Component {
           name: "Bounce Back",
           detail: ["Healthy Energy Drink", "Orange Flaour"],
           detailBox: {
-            name: [
+            type: "energyDrink",
+            nutriFacts: [
               "Water",
               "Sugar",
               "Dextrose",
@@ -51,7 +52,8 @@ class Normal extends React.Component {
           name: "Bounce Back",
           detail: ["Healthy Energy Drink", "BlueBerry Flavour"],
           detailBox: {
-            name: [
+            type: "energyDrink",
+            nutriFacts: [
               "Water",
               "Sugar",
               "Dextrose",
@@ -69,7 +71,8 @@ class Normal extends React.Component {
           name: "Bounce Back",
           detail: ["Healthy Energy Drink", "Lemon Flavour"],
           detailBox: {
-            name: [
+            type: "energyDrink",
+            nutriFacts: [
               "Water",
               "Sugar",
               "Dextrose",
@@ -87,6 +90,7 @@ class Normal extends React.Component {
           name: "BlueBerry Flavour",
           detail: ["Brewed Ice Tea"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
@@ -100,6 +104,7 @@ class Normal extends React.Component {
           name: "Peach Smooth Flavour",
           detail: ["Brewed Ice Tea"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
@@ -113,6 +118,7 @@ class Normal extends React.Component {
           name: "Refreshing Cola Flavour",
           detail: ["Brewed Ice Tea"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
@@ -126,6 +132,7 @@ class Normal extends React.Component {
           name: "Strawberry Flavour",
           detail: ["Brewed Ice Tea"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
@@ -139,6 +146,7 @@ class Normal extends React.Component {
           name: "Lemon Mojito Flavour",
           detail: ["Brewed Ice Tea"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
@@ -152,6 +160,7 @@ class Normal extends React.Component {
           name: "Original Tea",
           detail: ["Brewed Ice Tea", "No added flavour"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
@@ -165,6 +174,7 @@ class Normal extends React.Component {
           name: "Green Apple Flavour",
           detail: ["Brewed Ice Tea", "Smooth Flavour"],
           detailBox: {
+            type: "iceTea",
             calories: 28,
             name: ["Protein", "Fat", "Total Carbs", "Sugar"],
             value: ["0gm", "0gm", "7gm", "7gm"],
