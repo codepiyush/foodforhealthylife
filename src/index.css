@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -1026,6 +1027,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* max-height: 100vh; */
 }
 .map-main {
   position: relative;
@@ -1047,6 +1049,7 @@ path:hover {
   cursor: pointer;
 }
 #tipMarker {
+  display: none;
   position: fixed;
   animation: appear .5s ease-in;
   background-color: white;
@@ -1058,4 +1061,37 @@ path:hover {
 }
 .address-display {
   flex: 40%;
+  display: flex;
+  /* justify-content: center; */
+  padding-top: 2%;
+  align-items: center;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+.address-card{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  padding: 20px 7%;
+  max-height: 180px;
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7px 0px;
+  -webkit-box-shadow: 21px 0px 16px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 21px 0px 16px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -15px -5px 10px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+.address-card>h2 {
+  padding: 10px 0px;
+  color: #009e7f;
+}
+.address-card>h2>i {
+  color: #d88902;
+  padding-right: 20px;
+}
+.address-card>p{
+  padding: 1px 5px 1px 0px;
 }
