@@ -13,7 +13,7 @@ class DetailBox extends React.Component {
                     Nutrition Fact
                 </div>
                 <div className="detail-body">
-                    <p>*Per 100gm of Product (approx.)</p>
+                    {this.props.detail.type=="iceTea"?<p>*Per 100ml of Product (approx.)</p>: <p>*Per 100gm of Product (approx.)</p>}
                     <div className="calorie">
                         Calories {this.props.detail.calories} Kcal
                     </div>
