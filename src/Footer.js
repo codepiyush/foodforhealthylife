@@ -11,7 +11,7 @@ class Footer extends React.Component {
             </div>
             <div className="brand-logo">
               <img
-                src={require("./images/Hello Cookies logo.png")}
+                src={require("./images/Hello Cookies logoR.png")}
                 alt=""
                 height="80px"
                 width="240px"
@@ -28,6 +28,12 @@ class Footer extends React.Component {
                 height="80px"
                 width="240px"
               />
+              <img
+                src={require("./images/Sohealthy.jpeg")}
+                alt=""
+                height="240px"
+                width="100px"
+              />
             </div>
           </div>
           <div className="contact" id="contact">
@@ -37,14 +43,14 @@ class Footer extends React.Component {
             <div className="contact-body">
               <div>
                 {" "}
-                <a href="mailto:kingdomoffice2019@gmail.com">
-                  <i class="fas fa-envelope"></i> kingdomoffice2019@gmail.com
+                <a href="mailto:bakkiicookii@gmail.com">
+                  <i class="fas fa-envelope"></i> bakkiicookii@gmail.com
                 </a>{" "}
               </div>
               <div>
                 {" "}
-                <a href="mailto:oprana@gmai.com">
-                  <i class="fas fa-envelope"></i> oprana@gmai.com
+                <a href="mailto:oprana@gmail.com">
+                  <i class="fas fa-envelope"></i> oprana@gmail.com
                 </a>{" "}
               </div>
               <div>
