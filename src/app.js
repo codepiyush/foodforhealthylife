@@ -11,9 +11,16 @@ class App extends React.Component {
             <div>
                 <Router>
                     <Sidebar />
-                    <Landing />
-                    <Main />
-                    <Footer/>
+                    <div className="scroll-cont">
+                        <div className="scroll-child">
+                            <Landing />
+                        </div>
+                        <div className="scroll-child">
+                            <Main />
+                            <Footer />
+                        </div>
+                    </div>
+                    
                 </Router>
             </div>
         )

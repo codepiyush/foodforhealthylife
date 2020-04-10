@@ -6,7 +6,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Encode Sans Semi Expanded", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: "Encode Sans Semi Expanded", sans-serif; */
 }
 
 html {
@@ -204,7 +205,15 @@ a {
   width: 100%;
   height: 100%;
 }
-
+/*scroll snap*/
+.scroll-cont {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+.scroll-child {
+  scroll-snap-align: start;
+}
 /* Switch */
 
 .switch {
@@ -428,7 +437,6 @@ a {
 }
 
 .heading {
-  font-family: "Titillium Web", sans-serif;
   font-size: 30px;
   padding: 10px 35px;
   letter-spacing: 1px;
@@ -457,7 +465,6 @@ hr {
   padding: 5px 10px 5px 10px;
   margin: 15px 1px 10px 45px;
   outline: none;
-  font-family: "Titillium Web", sans-serif;
   transition-duration: 1s;
   color: white;
 }
@@ -593,7 +600,6 @@ hr {
   font-size: 23px;
   width: 400px;
   border: none;
-  font-family: "Titillium Web", sans-serif;
   border-radius: 5px;
   outline: none;
   transition-duration: all 0.5s;
@@ -627,7 +633,6 @@ hr {
   font-size: 23px;
   width: 400px;
   border: none;
-  font-family: "Titillium Web", sans-serif;
   border-radius: 5px;
   outline: none;
   transition-duration: all 0.5s;
@@ -695,7 +700,6 @@ hr {
   font-weight: bold;
   color: #070707;
   font-size: 17px;
-  font-family: "Titillium Web", sans-serif;
 }
 
 .disp-desc>p {
@@ -840,7 +844,6 @@ hr {
   width: 500px;
   font-size: 19px;
   font-style: italic;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .healthy-detail {
@@ -862,7 +865,6 @@ hr {
 /* about us */
 
 .about-top {
-  font-family: 'Playfair Display', serif;
   height: 100px;
   font-size: 50px;
   background-color: #018a6e;
@@ -875,7 +877,6 @@ hr {
 
 .about-main {
   background-color: transparent;
-  font-family: 'Playfair Display', serif;
   padding: 50px 15% 50px 14%;
 }
 
@@ -896,7 +897,6 @@ hr {
 
 .about-main p {
   color: #333;
-  font-family: 'Montserrat', sans-serif;
   font-size: 21px;
   line-height: 1.75em;
   padding-bottom: 40px;
@@ -904,7 +904,6 @@ hr {
 
 .about-main p>first {
   float: left;
-  font-family: 'Playfair Display', serif;
   font-size: 300%;
   width: .7em;
   line-height: 100%;
@@ -1016,7 +1015,6 @@ footer {
 /*svg*/
 .presence-top {
   color: #ffffff;
-  font-family: 'Playfair Display', serif;
   background-color: #009e7f;
   padding: 15px;
   font-size: 35px;
@@ -1042,6 +1040,9 @@ footer {
   height: 100%;
   
 }
+path[presence="false"] {
+  fill: #333;
+}
 
 path:hover {
   fill: #00ffcc;
@@ -1053,11 +1054,11 @@ path:hover {
   position: fixed;
   animation: appear .5s ease-in;
   background-color: white;
-  color: #333;
+  color: black;
   border:1px solid #004c3d;
   padding: 4px 6px;
   border-radius: 5px/7px;
-  font-size: 13px;
+  font-size: 12px;
 }
 .address-display {
   flex: 40%;
@@ -1067,14 +1068,13 @@ path:hover {
   align-items: center;
   flex-direction: column;
   max-height: 90vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .address-card{
-  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
-  padding: 20px 7%;
-  max-height: 180px;
-  min-width: 350px;
+  padding: 20px 1% 20px 7%;
+  max-height: 200px;
+  width: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1085,12 +1085,13 @@ path:hover {
   border-radius: 5px;
 }
 .address-card>h2 {
+  font-size: 20px;
   padding: 10px 0px;
   color: #009e7f;
 }
 .address-card>h2>i {
   color: #d88902;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .address-card>p{
   padding: 1px 5px 1px 0px;
