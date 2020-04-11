@@ -1044,8 +1044,13 @@ path[presence="false"] {
   fill: #333;
 }
 
-path:hover {
+path[presence="true"]:hover {
   fill: #00ffcc;
+  transition-duration: .5s;
+  cursor: pointer;
+}
+path[presence="false"]:hover {
+  fill: #cd0120ab;
   transition-duration: .5s;
   cursor: pointer;
 }
@@ -1095,4 +1100,66 @@ path:hover {
 }
 .address-card>p{
   padding: 1px 5px 1px 0px;
+}
+
+.presence-cont {
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  padding-top: 7%;
+  align-items: center;
+  flex-direction: column;
+  max-height: 400px;
+  min-width: 452px;
+}
+.presence-home>p{
+  padding: 7px 5px;
+  animation: appear 2s ease-in;
+}
+.presence-home p:nth-child(1),.presence-home p:nth-child(2){
+  color: #009e7f;
+  font-size: 38px;
+  font-weight: 700;
+}
+.presence-home p:nth-child(1) {
+  animation: presence 1s ease-in;
+}
+.presence-home p:nth-child(2) {
+  animation: presence-reverse 1s ease-in 1s;
+  animation-fill-mode: backwards;
+}
+.presence-home p:nth-child(3) {
+  animation: appear 1s ease-in 2s;
+  animation-fill-mode: backwards;
+  color: #cd011e;
+  font-size: 18px;
+}
+.presence-home>p>span {
+  color: #d88902;
+}
+
+.unavail>p {
+  color: #cd011e;
+  font-size: 20px;
+}
+
+@keyframes presence {
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes presence-reverse {
+  0%{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

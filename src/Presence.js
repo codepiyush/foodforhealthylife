@@ -438,15 +438,21 @@ class Presence extends React.Component {
     renderAddress() {
         if (this.state.availablity == null) {
             return (
-                <div className="address-display">
-                    click to reveal address
+                <div className="presence-home presence-cont">
+                    <p>Available in <span> 45 </span> Stores</p>
+                    <p>Across <span> 8 </span> states</p>
+                    <p>Click on state on map to know more .</p>
                 </div>
             )
         }
         else if (this.state.availablity == false) {
             return (
-                <div className="address-display">
-                    not present in this state. comming soon.
+                <div className="presence-cont unavail">
+                    <p>
+                        Currently unavailable. </p>
+                    <p>
+                        Comming Soon!
+                    </p>
                 </div>
             )
         }
