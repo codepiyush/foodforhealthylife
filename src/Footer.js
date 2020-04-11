@@ -31,8 +31,8 @@ class Footer extends React.Component {
               <img
                 src={require("./images/Sohealthy.jpeg")}
                 alt=""
-                height="240px"
-                width="100px"
+                height="120px"
+                width="240px"
               />
             </div>
           </div>
