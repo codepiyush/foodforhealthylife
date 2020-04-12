@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink as Link } from "react-router-hash-link";
 
 // import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
-class Sidebar extends Component {
-  render() {
+function Sidebar() {
     return (
       <div className="sidebar">
         <div className="logo">
@@ -14,71 +13,85 @@ class Sidebar extends Component {
         </div>
         <div className="menu">
           <div className="menuContainer">
-            <div className="sideMenuExtra">
-              <div>
-                <i class="fas fa-shopping-cart"></i>
+            <Link to="/products#home" activeClassName="sidebarSelected">
+              <div className="sideMenuExtra">
+                <div>
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div>
+                  <p>Our Products</p>
+                </div>
               </div>
-              <div>
-                <p>Our Products</p>
-              </div>
-            </div>
+            </Link>
             <div className="sidecontent">
-              <div className="smitem">
-                {" "}
-                <Link to="/products/cookie#cookie">Cookie</Link>
-              </div>
-              <div className="smitem" id="sportsd">
-                <Link to="/products/drinks#drinks">Drinks</Link>
-              </div>
-              <div className="smitem">
-                <Link to="/products/healthy#healthy">Healthy Cookies</Link>
-              </div>
-              <div className="smitem">
-                <Link to="/products/others#others">Upcomming Products</Link>
-              </div>
+              <Link smooth to="/products/cookie#cookie">
+                <div className="smitem">
+                  Cookie
+                </div>
+              </Link>
+              <Link smooth to="/products/drinks#drinks">
+                <div className="smitem" id="sportsd">
+                  Drinks
+                </div>
+              </Link>
+              <Link smooth to="/products/healthy#healthy">
+                <div className="smitem">
+                  Healthy Cookies
+                </div>
+              </Link>
+              <Link smooth to="/products/others#others">
+                <div className="smitem">
+                  Upcomming Products
+                </div>
+              </Link>
             </div>
           </div>
           <div className="menuContainer">
-            <div className="sideMenuLink">
-              <div>
-                <i class="fas fa-users"></i>
-              </div>
-              <div>
-                <p>
-                  <Link to="/about#about">About us</Link>
+            <Link smooth to="/about#about" activeClassName="sidebarSelected">
+              <div className="sideMenuLink">
+                <div>
+                  <i class="fas fa-users"></i>
+                </div>
+                <div>
+                  <p>
+                    About us
                 </p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="menuContainer">
-            <div className="sideMenuLink">
-              <div>
-                <i class="fas fa-map-marked-alt"></i>
-              </div>
-              <div>
-                <p>
-                  <Link to="/presence">Our Presence</Link>
+            <Link smooth to="/presence" activeClassName="sidebarSelected">
+              <div className="sideMenuLink">
+                <div>
+                  <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div>
+                  <p>
+                    Our Presence
                 </p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="menuContainer">
-            <div className="sideMenuLink">
-              <div>
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <p>
-                  {" "}
-                  <a href="#contact"> Contact us </a>
+            <a href={`#contact`}>
+              <div className="sideMenuLink">
+                <div>
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <p>
+                    {" "}
+                    Contact us
                 </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     );
-  }
 }
 
 export default Sidebar;

@@ -60,11 +60,10 @@ a {
 
 .menuContainer {
   position: relative;
-  padding: 20px;
   text-align: center;
   /* border-top: 1px solid rgba(0, 0, 0, 0.164);
   border-bottom: 1px solid rgba(0, 0, 0, 0.164); */
-  transition-duration: 0.5s;
+  transition: 0.3s ease-in;
 }
 
 .sidecontent {
@@ -78,10 +77,17 @@ a {
   color: white;
   display: none;
   border-radius: 2px;
-  transition-duration: 0.5s;
+  animation: appear .3s ease-in;
   -webkit-box-shadow: 28px 2px 20px -17px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 28px 2px 20px -17px rgba(0, 0, 0, 0.33);
   box-shadow: 28px 2px 20px -17px rgba(0, 0, 0, 0.33);
+}
+.sidebarSelected>div {
+  background-color: #009e7f !important;
+  color: white !important; 
+}
+.sidebarSelected i{
+  color: white !important;
 }
 
 .smitem {
@@ -91,7 +97,7 @@ a {
   border-radius: 5px;
   background-color: #00ffcc;
   color: #004c3d;
-  transition-duration: 0.2s;
+  transition: 0.3s ease-in;
 }
 
 .smitem:hover {
@@ -102,10 +108,12 @@ a {
 
 .sideMenuExtra {
   display: flex;
+  padding: 20px;
   flex-direction: row;
 }
 
 .sideMenuLink {
+  padding: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -458,7 +466,7 @@ hr {
   margin-left: 50px;
 }
 
-.products>button {
+.navbutton {
   border: none;
   background: transparent;
   font-size: 20px;
@@ -474,8 +482,12 @@ hr {
   border-radius: 7px;
   color: #004c3d !important;
 }
-
-.products>button:hover {
+.navbarSelected>button{
+  background-color: #ffffff !important;
+  color: #009e7f !important;
+  border-radius: 7px;
+}
+.navbutton:hover {
   color: #009e7f !important;
   background-color: #ffffff !important;
   border-radius: 7px;

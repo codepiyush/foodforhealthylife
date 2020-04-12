@@ -10,9 +10,13 @@ import Presence from './Presence'
 class Main extends React.Component {
   render() {
     return (
-      <div className="main">
+      <div className="main" id="home">
         <Switch>
           <Route exact path="/">
+            {" "}
+            <Home />{" "}
+          </Route>
+          <Route exact path="/products">
             {" "}
             <Home />{" "}
           </Route>

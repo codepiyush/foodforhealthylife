@@ -1,27 +1,31 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { NavHashLink as Link } from "react-router-hash-link";
+
+// import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 
 class TopNav extends React.Component {
     render() {
         return (
             <div className="nav2">
-                <div className="head-cont">
-                    <p className="heading">Our Products</p>
-                </div>
+                <Link to="/products#home">
+                    <div className="head-cont">
+                        <p className="heading">Our Products</p>
+                    </div>
+                </Link>
                 <div className="products" id="products">
-                    <button>
-                        <Link to="/products/cookie">Cookie</Link>
-                    </button>
-                    <button>
-                        <Link to="/products/healthy">Healthy Cookies</Link>
-                    </button>
-                    <button>
-                        <Link exact to="/products/drinks">Drinks</Link>
-                    </button>
-                    <button className="highlight">
-                        <Link exact to="/products/others">Upcomming Products</Link>
-                    </button>
+
+                    <Link to="/products/cookie#cookie" activeClassName="navbarSelected"><button className="navbutton">Cookie</button></Link>
+
+
+                    <Link to="/products/healthy#healthy" activeClassName="navbarSelected"> <button className="navbutton">Healthy Cookies</button></Link>
+
+
+                    <Link exact to="/products/drinks#drinks" activeClassName="navbarSelected"><button className="navbutton">Drinks</button></Link>
+
+
+                    <Link exact to="/products/others#others" activeClassName="navbarSelected"><button className="navbutton highlight">Upcomming Products</button></Link>
+
                 </div>
             </div>
         )

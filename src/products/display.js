@@ -36,13 +36,13 @@ class Display extends React.Component {
             className="disp-img-sec"
             style={{ padding: "10px", textAlign: "center" }}
           >
-            <button
+            {this.props.desc.images.length==2?<button
               className="next-button"
               onMouseOver={this.renderImage2}
-              onMouseOut={this.renderImage1}
-            >
-            <i class="fas fa-angle-right"></i>
-            </button>
+              onMouseOut={this.renderImage1}>
+              <i class="fas fa-angle-right"></i>
+            </button>:''}
+            
             <img
               src={this.props.desc.images[this.state.imageno]}
               alt="pic"
