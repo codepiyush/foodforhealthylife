@@ -512,7 +512,7 @@ class Presence extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className="presence-top">Find Us</div>
+                <div className="presence-top" id="presence">Find Us</div>
                 <div className="presence-main">
                     <div className="map-main">
                         <svg
