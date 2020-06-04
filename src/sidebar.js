@@ -7,8 +7,8 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="logo">
-        <img src={require("./images/Kingdom.png")} alt="" />
         <img src={require("./images/Hello Cookies logoR.png")} alt="" />
+        <img src={require("./images/Kingdom.png")} alt="" />
         <img src={require("./images/FortiRich.jpg")} alt="" />
       </div>
       <div className="menu">
