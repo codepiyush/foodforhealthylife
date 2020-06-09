@@ -11,7 +11,7 @@ class Footer extends React.Component {
             </div>
             <div className="brand-logo">
               <img
-                src={require("./images/Hello Cookies logoR.png")}
+                src={require("./images/BakkiicookiiLogo.png")}
                 alt=""
                 height="80px"
                 width="240px"
@@ -23,7 +23,7 @@ class Footer extends React.Component {
                 width="260px"
               />
               <img
-                src={require("./images/FortiRich.jpg")}
+                src={require("./images/FortiRichNEWLogo.png")}
                 alt=""
                 height="80px"
                 width="240px"
