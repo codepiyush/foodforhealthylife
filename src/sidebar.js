@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
-
+import mypdf from "../src/CatalogBakkiicookii.pdf";
 // import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 function Sidebar() {
@@ -63,6 +63,18 @@ function Sidebar() {
               </div>
             </div>
           </Link>
+        </div>
+        <div className="menuContainer">
+          <a href={mypdf} target="_blank" rel="noopener noreferrer" download>
+            <div className="sideMenuLink">
+              <div>
+                <i className="fas fa-download"></i>
+              </div>
+              <div>
+                <p>Catalog</p>
+              </div>
+            </div>
+          </a>
         </div>
         <div className="menuContainer">
           <a href={`#contact`}>
