@@ -68,9 +68,7 @@ class Footer extends React.Component {
               </div>
             </div>
           </div>
-          <div className="copyright">
-            Copyright © 2020 — Food For Healthy Life
-          </div>
+          <div className="copyright">Copyright © 2020 - Bakkii Cookii</div>
         </div>
       </footer>
     );
