@@ -12,25 +12,25 @@ class Footer extends React.Component {
             <div className="brand-logo">
               <img
                 src={require("./images/BakkiicookiiLogo.png")}
-                alt=""
+                alt="bakkii cookii"
                 height="80px"
                 width="240px"
               />
               <img
                 src={require("./images/Kings.png")}
-                alt=""
+                alt="Kingdom foods"
                 height="100px"
                 width="260px"
               />
               <img
                 src={require("./images/FortiRichNEWLogo.png")}
-                alt=""
+                alt="Fortirich"
                 height="80px"
                 width="240px"
               />
               <img
                 src={require("./images/Sohealthy.jpeg")}
-                alt=""
+                alt="Sohealthy"
                 height="120px"
                 width="240px"
               />

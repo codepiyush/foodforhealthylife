@@ -7,9 +7,12 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="logo">
-        <img src={require("./images/BakkiicookiiLogo.png")} alt="" />
-        <img src={require("./images/Kingdom.png")} alt="" />
-        <img src={require("./images/FortiRichNEWLogo.png")} alt="" />
+        <img
+          src={require("./images/BakkiicookiiLogo.png")}
+          alt="Bakkii cookii"
+        />
+        <img src={require("./images/Kingdom.png")} alt="KingdomFood" />
+        <img src={require("./images/FortiRichNEWLogo.png")} alt="Fortirich" />
       </div>
       <div className="menu">
         <div className="menuContainer">
