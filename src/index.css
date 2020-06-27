@@ -1445,6 +1445,18 @@ path[presence="false"]:hover {
   .sidecontent {
     width: 150px;
   }
+  .overcast{
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgb(0, 0, 0,.7), rgb(0, 0, 0));
+  }
+  .home-img-text {
+    margin-bottom: 20%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #018a6e;
+    border-radius: 4px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
