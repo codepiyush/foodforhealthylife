@@ -32,7 +32,6 @@ class Home extends React.Component {
           <div className="col">
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/cookie#premium-cookie">
                   <p className="home-img-text">Premium Cookies</p>
                 </Link>
@@ -44,7 +43,6 @@ class Home extends React.Component {
             </div>
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/drinks">
                   <p className="home-img-text">Drinks- Ice tea</p>
                 </Link>
@@ -56,7 +54,6 @@ class Home extends React.Component {
             </div>
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/cookie">
                   <p className="home-img-text">Cookies</p>
                 </Link>
@@ -68,7 +65,6 @@ class Home extends React.Component {
             </div>
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/healthy">
                   <p className="home-img-text">Healthy Cookies</p>
                 </Link>
@@ -82,7 +78,6 @@ class Home extends React.Component {
           <div className="col">
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/drinks">
                   <p className="home-img-text">Energy Drink</p>
                 </Link>
@@ -94,7 +89,6 @@ class Home extends React.Component {
             </div>
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/cookie#giftpack">
                   <p className="home-img-text">Gift Pack</p>
                 </Link>
@@ -106,7 +100,6 @@ class Home extends React.Component {
             </div>
             <div className="img-cont">
               <div className="overcast">
-                {" "}
                 <Link to="/products/healthy">
                   <p className="home-img-text">Protein Cookies</p>
                 </Link>
