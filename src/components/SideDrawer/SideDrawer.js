@@ -1,8 +1,29 @@
 import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
-import mypdf from "/home/atul/foodforhealthylife/src/CatalogBakkiicookii.pdf";
+import mypdf from "../../CatalogBakkiicookii.pdf";
 
 class sideDrawer extends React.Component {
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     sidecontentView:"" 
+  //   }
+  // }
+  // handleProductToggle = () => {
+  //   this.setState((prevState) => {
+  //     if (prevState.sidecontentView == "") {
+  //       return({sidecontentView:"sidecontentshow"})
+  //     }
+  //     else {
+  //       return({sidecontentView:""})
+  //     }
+  //   })
+  // }
+  // componentDidMount(){
+  //   window.addEventListener('click', ()=>{
+  //     this.setState({sidecontentView:""})
+  //   })
+  // }
   render() {
     let drawerclasses = "side_drawer";
     if (this.props.show) {
@@ -14,30 +35,35 @@ class sideDrawer extends React.Component {
           <div className="menu">
             <div className="logo">
               <img
-                src={require("/home/atul/foodforhealthylife/src/images/BakkiicookiiLogo.png")}
+                src={require("../../images/BakkiicookiiLogo.png")}
                 alt="Bakkii cookii"
               />
               <img
-                src={require("/home/atul/foodforhealthylife/src/images/Kingdom.png")}
+                src={require("../../images/Kingdom.png")}
                 alt="KingdomFood"
               />
               <img
-                src={require("/home/atul/foodforhealthylife/src/images/FortiRichNEWLogo.png")}
+                src={require("../../images/FortiRichNEWLogo.png")}
                 alt="Fortirich"
               />
             </div>
             <div className="menuContainer">
-              <Link to="/products#home" activeClassName="sidebarSelected">
-                <div className="sideMenuExtra">
-                  <div>
-                    <i class="fas fa-shopping-cart"></i>
-                  </div>
-                  <div>
-                    <p>Our Products</p>
-                  </div>
+              <div className="productToggle">
+                <div>
+                  <Link to="/products#home" activeClassName="sidebarSelected">
+                    <div className="sideMenuExtra">
+                      <div>
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                      <div>
+                        <p>Our Products</p>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </Link>
-              <div className="sidecontent">
+                <div id="productToggleButton" onClick={this.props.handleProductToggle}> <i class="fas fa-angle-right"></i></div>
+              </div>
+              <div className={`sidecontent ${this.props.sidecontentView}`}>
                 <Link smooth to="/products/cookie#cookie">
                   <div className="smitem">Cookie</div>
                 </Link>

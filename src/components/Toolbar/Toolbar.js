@@ -13,7 +13,7 @@ class Toolbar extends React.Component {
             <div className="toolbar_logo">
               <a href="/">
                 <img
-                  src={require("/home/atul/foodforhealthylife/src/images/BakkiicookiiLogo.png")}
+                  src={require("../../images/BakkiicookiiLogo.png")}
                   alt="Bakkii cookii"
                 />
               </a>

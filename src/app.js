@@ -3,15 +3,16 @@ import Sidebar from "./sidebar";
 import Landing from "./Landing";
 import Main from "./Main";
 import Footer from "./Footer";
-import Toolbar from "/home/atul/foodforhealthylife/src/components/Toolbar/Toolbar.js";
-import SideDrawer from "/home/atul/foodforhealthylife/src/components/SideDrawer/SideDrawer";
-import Backdrop from "/home/atul/foodforhealthylife/src/components/Backdrop/Backdrop.js";
+import Toolbar from "./components/Toolbar/Toolbar.js";
+import SideDrawer from "./components/SideDrawer/SideDrawer";
+import Backdrop from "./components/Backdrop/Backdrop.js";
 
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
   state = {
     sideDrawerOpen: false,
+    sidecontentView: ""
   };
 
   drawerToggleClickHandler = () => {
@@ -19,9 +20,19 @@ class App extends React.Component {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
+  handleProductToggle = () => {
+    this.setState((prevState) => {
+      if (prevState.sidecontentView == "") {
+        return ({ sidecontentView: "sidecontentshow" })
+      }
+      else {
+        return ({ sidecontentView: "" })
+      }
+    })
+  }
 
   backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false });
+    this.setState({ sideDrawerOpen: false, sidecontentView:"" });
   };
   render() {
     let sideDrawer;
@@ -33,7 +44,7 @@ class App extends React.Component {
       <div>
         <Router>
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer show={this.state.sideDrawerOpen} sidecontentView={this.state.sidecontentView} handleProductToggle={this.handleProductToggle} />
           {backdrop}
           <Sidebar />
           <div className="scroll-cont">
