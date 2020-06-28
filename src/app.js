@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./sidebar";
-import Landing from "./Landing";
+// import Landing from "./Landing";
 import Main from "./Main";
 import Footer from "./Footer";
 import Toolbar from "./components/Toolbar/Toolbar.js";
@@ -32,7 +32,7 @@ class App extends React.Component {
   }
 
   backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false, sidecontentView:"" });
+    this.setState({ sideDrawerOpen: false, sidecontentView: "" });
   };
   render() {
     let sideDrawer;
@@ -47,15 +47,8 @@ class App extends React.Component {
           <SideDrawer show={this.state.sideDrawerOpen} sidecontentView={this.state.sidecontentView} handleProductToggle={this.handleProductToggle} />
           {backdrop}
           <Sidebar />
-          <div className="scroll-cont">
-            <div className="scroll-child">
-              <Landing />
-            </div>
-            <div className="scroll-child">
-              <Main />
-              <Footer />
-            </div>
-          </div>
+          <Main />
+          <Footer />
         </Router>
       </div>
     );

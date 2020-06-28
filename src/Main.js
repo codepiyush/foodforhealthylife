@@ -7,42 +7,36 @@ import Others from "./products/others"
 import Home from './Home';
 import About from './About';
 import Presence from './Presence'
+import Landing from './Landing'
+
 class Main extends React.Component {
   render() {
     return (
       <div className="main" id="home">
         <Switch>
           <Route exact path="/">
-            {" "}
-            <Home />{" "}
+            <Home />
           </Route>
           <Route exact path="/products">
-            {" "}
-            <Home />{" "}
+            <Home />
           </Route>
           <Route path="/products/healthy">
-            {" "}
-            <Healthy />{" "}
+            <Healthy />
           </Route>
           <Route path="/products/cookie">
-            {" "}
-            <Cookie />{" "}
+            <Cookie />
           </Route>
           <Route path="/products/drinks">
-            {" "}
-            <Drinks />{" "}
+            <Drinks />
           </Route>
           <Route path="/products/others">
-            {" "}
-            <Others />{" "}
+            <Others />
           </Route>
           <Route path="/about">
-            {" "}
-            <About />{" "}
+            <About />
           </Route>
           <Route path="/presence">
-            {" "}
-            <Presence />{" "}
+            <Presence />
           </Route>
         </Switch>
       </div>

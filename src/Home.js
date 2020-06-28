@@ -2,6 +2,8 @@ import React from "react";
 import Display from "./products/display";
 import { HashLink as Link } from "react-router-hash-link";
 import TopNav from "./nav";
+import Landing from "./Landing";
+
 
 class Home extends React.Component {
   constructor() {
@@ -26,6 +28,8 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Landing />
+
         <TopNav />
 
         <div className="display-home">

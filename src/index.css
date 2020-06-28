@@ -173,7 +173,7 @@ a {
 /*--slider--*/
 
 .landing {
-  margin-left: 200px;
+  /* margin-left: 200px; */
   -webkit-box-shadow: -2px 16px 15px -4px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: -2px 16px 15px -4px rgba(0, 0, 0, 0.26);
   box-shadow: -2px 16px 15px -4px rgba(0, 0, 0, 0.26);
@@ -230,7 +230,7 @@ a {
 
 /*scroll snap*/
 
-.scroll-cont {
+/* .scroll-cont {
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y proximity;
@@ -238,7 +238,7 @@ a {
 
 .scroll-child {
   scroll-snap-align: start;
-}
+} */
 
 /* Switch */
 
@@ -453,10 +453,10 @@ a {
 
 .nav2 {
   box-shadow: 0 8px 6px -9px black;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   z-index: 1;
-  padding: 7px;
+  /* padding: 7px; */
   background-color: #009e7f;
   text-align: center;
   display: flex;
@@ -480,6 +480,8 @@ hr {
 }
 
 .products {
+  display: flex;
+  align-items: center;
   text-align: center;
   margin-left: 50px;
 }
@@ -489,7 +491,7 @@ hr {
   background: transparent;
   font-size: 20px;
   padding: 5px 10px 5px 10px;
-  margin: 15px 1px 10px 45px;
+  margin: 0px 1px 0px 45px;
   outline: none;
   transition-duration: 1s;
   color: white;
@@ -516,7 +518,9 @@ hr {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-
+.cookie-container {
+  padding-top: 20px;
+}
 .normal-cookie {
   margin-top: 50px;
   margin-left: 60px;
@@ -1362,6 +1366,7 @@ path[presence="false"]:hover {
   }
   .main {
     margin-left: 0;
+    /* margin-top: 70px; */
     /* padding-top: 56px; */
   } 
   .about-top {
@@ -1407,10 +1412,23 @@ path[presence="false"]:hover {
     padding: 5px;
   }
   .normal-cookie {
-    margin-left: 25px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
-  .normal-biscuit {
+  /* .normal-biscuit {
     margin-left: 25px;
+  } */
+  #cookie{
+    margin-top: 70px;
+  }
+  .disp-container{
+    margin-left: 0px;
+  }
+  .gift-pack{
+    margin-left: 0px;
+  }
+  .disp-segment{
+    margin-right: 0px;
   }
   .sidecontentshow {
     display: block;
@@ -1457,6 +1475,22 @@ path[presence="false"]:hover {
     border: 1px solid #018a6e;
     border-radius: 4px;
   }
+  .premium-cookie{
+    margin-left: 0px;
+  }
+  .premium-title{
+    margin-bottom: 50px;
+  }
+
+  .gift-title{
+    margin-bottom: 50px;
+  }
+
+  .display-main {
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
 }
 
 @media only screen and (max-width: 320px) {
