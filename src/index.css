@@ -1504,6 +1504,10 @@ path[presence="false"]:hover {
   .about-top{
     margin-top: 0px;
   }
+  .address-display{
+    overflow-y: visible;
+    max-height: none;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1520,6 +1524,7 @@ path[presence="false"]:hover {
   .sideMenuLink {
     padding: 10px 10px;
   }
+  
 }
 
 @media only screen and (min-width: 481px) {
