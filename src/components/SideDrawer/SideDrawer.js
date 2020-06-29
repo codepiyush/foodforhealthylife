@@ -50,7 +50,7 @@ class sideDrawer extends React.Component {
             <div className="menuContainer">
               <div className="productToggle">
                 <div>
-                  <Link to="/products#home" activeClassName="sidebarSelected">
+                  <Link to="/products" activeClassName="sidebarSelected">
                     <div className="sideMenuExtra">
                       <div>
                         <i class="fas fa-shopping-cart"></i>

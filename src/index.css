@@ -456,7 +456,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 1;
-  /* padding: 7px; */
+  padding: 4px;
   background-color: #009e7f;
   text-align: center;
   display: flex;
@@ -1359,7 +1359,11 @@ path[presence="false"]:hover {
     display: none;
   }
   .landing {
-    display: none;
+    /* display: none; */
+    margin-top: 56px;
+  }
+  #slider{
+    height: 40vh;
   }
   .nav2 {
     display: none;
