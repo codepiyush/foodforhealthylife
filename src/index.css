@@ -1362,11 +1362,15 @@ path[presence="false"]:hover {
     display: none;
   }
   .landing {
-    /* display: none; */
-    /* margin-top: 56px; */
+    padding: 5px;
+    box-shadow: none;
   }
   #slider{
-    height: 40vh;
+    border-radius: 7px;
+    height: 30vh;
+  }
+  .switch{
+    bottom: 20px;
   }
   .nav2 {
     display: none;
