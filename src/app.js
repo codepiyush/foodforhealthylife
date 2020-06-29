@@ -30,7 +30,9 @@ class App extends React.Component {
       }
     })
   }
-
+  closeOnLinkClick = () => {
+    this.setState({ sideDrawerOpen: false, sidecontentView: "" });
+  }
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false, sidecontentView: "" });
   };
@@ -44,7 +46,7 @@ class App extends React.Component {
       <div>
         <Router>
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} sidecontentView={this.state.sidecontentView} handleProductToggle={this.handleProductToggle} />
+          <SideDrawer show={this.state.sideDrawerOpen} sidecontentView={this.state.sidecontentView} handleProductToggle={this.handleProductToggle} closeDrawer={this.closeOnLinkClick} />
           {backdrop}
           <Sidebar />
           <Main />

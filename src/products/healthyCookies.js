@@ -7,8 +7,6 @@ class Healthy extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="healthy"></div>
-        <TopNav />
         <div>
           <Switch>
             <Route exact path="/products/healthy">

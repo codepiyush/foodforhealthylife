@@ -7,8 +7,6 @@ class Others extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="others"></div>
-        <TopNav />
         <div>
           <Switch>
             <Route exact path="/products/others">

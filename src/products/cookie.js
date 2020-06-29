@@ -7,8 +7,6 @@ class Cookie extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="cookie"></div>
-        <TopNav />
         <div>
           <Switch>
             <Route exact path="/products/cookie">

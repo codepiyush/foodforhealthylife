@@ -27,18 +27,18 @@ function Sidebar() {
             </div>
           </Link>
           <div className="sidecontent">
-            <Link smooth to="/products/cookie#cookie">
+            <Link smooth to="/products/cookie#home">
               <div className="smitem">Cookie</div>
             </Link>
-            <Link smooth to="/products/drinks#drinks">
+            <Link smooth to="/products/drinks#home">
               <div className="smitem" id="sportsd">
                 Drinks
               </div>
             </Link>
-            <Link smooth to="/products/healthy#healthy">
+            <Link smooth to="/products/healthy#home">
               <div className="smitem">Healthy Cookies</div>
             </Link>
-            <Link smooth to="/products/others#others">
+            <Link smooth to="/products/others#home">
               <div className="smitem">Upcomming Products</div>
             </Link>
           </div>

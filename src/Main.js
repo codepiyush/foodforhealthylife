@@ -8,11 +8,13 @@ import Home from './Home';
 import About from './About';
 import Presence from './Presence'
 import Landing from './Landing'
+import TopNav from './nav'
 
 class Main extends React.Component {
   render() {
     return (
       <div className="main" id="home">
+        <TopNav />
         <Switch>
           <Route exact path="/">
             <Home />
