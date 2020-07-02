@@ -44,7 +44,7 @@ function Sidebar() {
           </div>
         </div>
         <div className="menuContainer">
-          <Link smooth to="/about#about" activeClassName="sidebarSelected">
+          <Link smooth to="/about#home" activeClassName="sidebarSelected">
             <div className="sideMenuLink">
               <div>
                 <i class="fas fa-users"></i>
@@ -56,7 +56,7 @@ function Sidebar() {
           </Link>
         </div>
         <div className="menuContainer">
-          <Link smooth to="/presence" activeClassName="sidebarSelected">
+          <Link smooth to="/presence#home" activeClassName="sidebarSelected">
             <div className="sideMenuLink">
               <div>
                 <i class="fas fa-map-marked-alt"></i>
