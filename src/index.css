@@ -27,7 +27,7 @@ a {
   padding-top: 10px;
   height: 100%;
   background-color: rgb(255, 255, 255);
-  width: 200px;
+  width: 217px;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -70,7 +70,7 @@ a {
   padding: 20px 5px;
   position: absolute;
   z-index: 1;
-  left: 200px;
+  left: 217px;
   top: 0;
   width: 220px;
   background-color: #009e7f;
@@ -153,10 +153,10 @@ a {
   transition-duration: 0.5s;
 }
 
-.menuContainer:hover .sidecontent {
+/* .menuContainer:hover .sidecontent {
   display: block;
   transition-duration: 0.5s;
-}
+} */
 
 .productToggle {
   display: flex;
@@ -166,8 +166,15 @@ a {
 }
 
 #productToggleButton {
-  padding: 10px 7px;
+  /* display: none; */
+  padding: 22px 10px;
+  height: 100%;
   background-color: #009e7f;
+}
+
+.sidecontentshow {
+  display: block;
+  z-index: 1 !important;
 }
 
 /*--slider--*/
@@ -447,7 +454,7 @@ a {
 /*--Main--*/
 
 .main {
-  margin-left: 200px;
+  margin-left: 217px;
   min-height: 100vh;
 }
 
@@ -601,6 +608,7 @@ hr {
   border-radius: 7px;
 }
 
+/* 
 .home-img-text:hover {
   background-color: #ffffff;
   color: #009e7f;
@@ -615,7 +623,7 @@ hr {
   display: flex;
   background: #0707078c;
   animation: appear 0.3s ease-in;
-}
+} */
 
 @keyframes appear {
   0% {
@@ -974,7 +982,7 @@ footer {
 }
 
 .footer {
-  margin-left: 200px;
+  margin-left: 217px;
   min-height: 400px;
   color: #ffffff;
   background-color: #018a6e;
@@ -1448,9 +1456,8 @@ path[presence="false"]:hover {
   .disp-segment {
     margin-right: 0px;
   }
-  .sidecontentshow {
-    display: block;
-    z-index: 1 !important;
+  .sidecontent {
+    left: 200px;
   }
   .sideMenuExtra {
     padding: 10px 20px;
@@ -1516,6 +1523,13 @@ path[presence="false"]:hover {
   .presence-main {
     flex-direction: column;
   }
+  #productToggleButton {
+    padding: 10px 7px;
+    background-color: #009e7f;
+  }
+  .prm-detail>p{
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1542,6 +1556,25 @@ path[presence="false"]:hover {
 
 /*hover solution*/
 
-@media(hover:hover) and (pointer:coarse) {
-  
+@media (hover:hover) and (pointer:fine) {
+  .menuContainer:hover .sidecontent {
+    display: block;
+    transition-duration: 0.5s;
+  }
+  #productToggleButton {
+    display: none;
+  }
+  .home-img-text:hover {
+    background-color: #ffffff;
+    color: #009e7f;
+  }
+  .img-cont:hover>img {
+    filter: blur(5px);
+    z-index: -1;
+  }
+  .img-cont:hover>.overcast {
+    display: flex;
+    background: #0707078c;
+    animation: appear 0.3s ease-in;
+  }
 }

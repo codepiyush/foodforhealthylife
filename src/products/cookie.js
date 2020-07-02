@@ -416,7 +416,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-1.jpg"),
-            require("../images/picture/G-1.jpg"),
+            // require("../images/picture/G-1.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -439,7 +439,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-2.jpg"),
-            require("../images/picture/G-2.jpg"),
+            // require("../images/picture/G-2.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -462,7 +462,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-3.jpg"),
-            require("../images/picture/G-3.jpg"),
+            // require("../images/picture/G-3.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -485,7 +485,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-4.jpg"),
-            require("../images/picture/G-4.jpg"),
+            // require("../images/picture/G-4.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -508,7 +508,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-5.jpg"),
-            require("../images/picture/G-5.jpg"),
+            // require("../images/picture/G-5.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -531,7 +531,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-6.jpg"),
-            require("../images/picture/G-6.jpg"),
+            // require("../images/picture/G-6.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -554,7 +554,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-7.jpg"),
-            require("../images/picture/G-7.jpg"),
+            // require("../images/picture/G-7.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -577,7 +577,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-8.jpg"),
-            require("../images/picture/G-8.jpg"),
+            // require("../images/picture/G-8.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],
@@ -600,7 +600,7 @@ class Gift extends React.Component {
         {
           images: [
             require("../images/picture/G-9.jpg"),
-            require("../images/picture/G-9.jpg"),
+            // require("../images/picture/G-9.jpg"),
           ],
           name: "Coconut Cookie",
           detail: ["Hand Crafted", "Eggless"],

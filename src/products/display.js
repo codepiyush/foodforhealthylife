@@ -20,7 +20,7 @@ class Display extends React.Component {
   }
   renderDetails = () => {
     this.props.desc.detail.map((details) => {
-      console.log(details);
+      // console.log(details);
       return (
         <div>
           <p className="disp-desc-sub">-{details}</p>
