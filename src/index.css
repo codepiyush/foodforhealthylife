@@ -535,6 +535,17 @@ hr {
   margin-top: 50px;
   margin-left: 60px;
 }
+.upcomming {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.upcomming img{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  width: 95%;
+  height: 50vh;
+}
 
 .premium-cookie {
   /* margin-top: 10px; */
@@ -1530,6 +1541,10 @@ path[presence="false"]:hover {
   .prm-detail>p{
     width: auto;
   }
+  .upcomming {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1591,6 +1606,22 @@ and (max-device-width : 1084px)
     font-size:15px;
     padding: 2px 4px 2px 4px;
     margin: 0px 1px 0px 10px;
+  }
+  .disp-segment{
+    margin-left: 15%;
+  }
+  .normal-cookie{
+    margin-left: 20px;
+  }
+  .gift-pack{
+    margin-left: 0;
+  }
+  .premium-cookie{
+    margin-left: 20px;
+  }
+  .upcomming {
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }  
 

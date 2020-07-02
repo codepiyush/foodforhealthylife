@@ -22,18 +22,22 @@ class Normal extends React.Component {
   constructor() {
     super();
     this.state = {
-      products: [],
+      products: [
+        {
+        image:require("../images/picture/GINGER LEMON.jpg"),
+      },
+      {
+        image:require("../images/picture/GINGER TURMERIC.jpg"),
+      },
+    ]
     };
   }
   render() {
     return (
       <React.Fragment>
-        <div className="normal-biscuit">
-          <div className="display-main">
-            {this.state.products.map((product) => {
-              return <Display desc={{ ...product }} />;
-            })}
-          </div>
+        <div className="upcomming">
+          <img src={this.state.products[0].image} alt="Upcomming"/>
+          <img src={this.state.products[1].image} alt="Upcomming"/>
         </div>
       </React.Fragment>
     );
