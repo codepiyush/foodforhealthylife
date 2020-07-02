@@ -1554,6 +1554,46 @@ path[presence="false"]:hover {
   }
 }
 
+/* Adress Card Display for Tabs and Small Laptops*/
+
+@media only screen   
+and (min-device-width : 616px)   
+and (max-device-width : 1333px)  {
+  .presence-main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}
+@media only screen    
+and (min-device-width : 768px)   
+and (max-device-width : 1084px)   
+{ 
+  .nav2{
+    padding: 1px;
+  }
+  .hr{
+    margin-left:5px;
+    margin-right: 5px;
+  }
+  .heading{
+    width: 10vw;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .products{
+    margin-left:0;
+  }
+  .navbutton{
+    font-size:15px;
+    padding: 2px 4px 2px 4px;
+    margin: 0px 1px 0px 10px;
+  }
+}  
+
 /*hover solution*/
 
 @media (hover:hover) and (pointer:fine) {
