@@ -552,6 +552,13 @@ hr {
   padding-top: 20px;
   margin-left: 60px;
 }
+.premium-cookie1 {
+  /* margin-top: 10px; */
+  padding-top: 40px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
 
 .gift-pack {
   margin-top: 10px;
@@ -682,6 +689,10 @@ hr {
   display: flex;
   justify-content: center;
 }
+.title-center1 {
+  display: flex;
+  margin-left:35%;
+}
 
 .gift-title {
   color: #ffffff;
@@ -743,12 +754,32 @@ hr {
   position: relative;
 }
 
+.disp-segment1 {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: auto;
+  display: flex;
+  position: relative;
+}
+
 .disp-container {
   margin-left: 20px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   height: 400px;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
+}
+.disp-container1 {
+  margin-top:40px;
+  margin-left: 65px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  width: 300px;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.1);
@@ -760,12 +791,24 @@ hr {
   color: #070707;
   font-size: 17px;
 }
+.disp-desc1 {
+  padding: 2px;
+  font-weight: bold;
+  color: #070707;
+  font-size: 17px;
+}
 
 .disp-desc>p {
   padding: 2px;
 }
 
 .disp-img-sec {
+  padding: 10px;
+  text-align: center;
+  height: 260px;
+  position: relative;
+}
+.disp-img-sec1 {
   padding: 10px;
   text-align: center;
   height: 260px;
@@ -782,6 +825,12 @@ hr {
 .name-sec {
   display: flex;
   justify-content: space-between;
+  padding: 5px;
+}
+.name-sec1 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
   padding: 5px;
 }
 
@@ -1461,12 +1510,30 @@ path[presence="false"]:hover {
   .disp-container {
     margin-left: 0px;
   }
+  .disp-container {
+    margin-left: 0px;
+  }
+  .disp-container1 {
+    margin-top:5px;
+    margin-left: 0px;
+    height: 348px;
+  }
   .gift-pack {
     margin-left: 0px;
   }
   .disp-segment {
     margin-right: 0px;
   }
+  .disp-segment1 {
+    margin-top:7px;
+    margin-right: 0px;
+  }
+  .title-center1{
+    margin-left: 0;
+    padding-right: 5px;
+    justify-content: center;
+  }
+
   .sidecontent {
     left: 200px;
   }

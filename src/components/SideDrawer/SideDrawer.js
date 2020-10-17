@@ -81,6 +81,18 @@ class sideDrawer extends React.Component {
               </div>
             </div>
             <div className="menuContainer">
+              <Link smooth onClick={this.props.closeDrawer} to="/BuyNow" activeClassName="sidebarSelected">
+                <div className="sideMenuLink">
+                  <div>
+                    <i class="fas fa-shopping-bag"></i>
+                  </div>
+                  <div>
+                    <p>Buy Now</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="menuContainer">
               <Link smooth onClick={this.props.closeDrawer} to="/about#home" activeClassName="sidebarSelected">
                 <div className="sideMenuLink">
                   <div>

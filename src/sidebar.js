@@ -77,6 +77,16 @@ render() {
             </Link>
           </div>
         </div>
+        <Link smooth to="/BuyNow" activeClassName="sidebarSelected">
+            <div className="sideMenuLink">
+              <div>
+              <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div>
+                <p>Buy Now</p>
+              </div>
+            </div>
+          </Link>
         <div className="menuContainer">
           <Link smooth to="/about#home" activeClassName="sidebarSelected">
             <div className="sideMenuLink">

@@ -9,6 +9,7 @@ import About from './About';
 import Presence from './Presence'
 import Landing from './Landing'
 import TopNav from './nav'
+import BuyNow from './BuyNow';
 
 class Main extends React.Component {
   render() {
@@ -39,6 +40,9 @@ class Main extends React.Component {
           </Route>
           <Route path="/presence">
             <Presence />
+          </Route>
+          <Route path="/BuyNow">
+            <BuyNow />
           </Route>
         </Switch>
       </div>
