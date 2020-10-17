@@ -7,8 +7,6 @@ class Drinks extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div id="drinks"></div>
-        <TopNav />
         <div>
           <Switch>
             <Route exact path="/products/drinks">

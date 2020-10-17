@@ -30,7 +30,7 @@ class Home extends React.Component {
       <React.Fragment>
         <Landing />
 
-        <TopNav />
+        {/* <TopNav /> */}
 
         <div className="display-home">
           <div className="col">

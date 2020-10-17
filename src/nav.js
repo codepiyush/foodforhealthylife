@@ -15,16 +15,16 @@ class TopNav extends React.Component {
                 </Link>
                 <div className="products" id="products">
 
-                    <Link to="/products/cookie#cookie" activeClassName="navbarSelected"><button className="navbutton">Cookie</button></Link>
+                    <Link to="/products/cookie#home" activeClassName="navbarSelected"><button className="navbutton">Cookie</button></Link>
 
 
-                    <Link to="/products/healthy#healthy" activeClassName="navbarSelected"> <button className="navbutton">Healthy Cookies</button></Link>
+                    <Link to="/products/healthy#home" activeClassName="navbarSelected"> <button className="navbutton">Healthy Cookies</button></Link>
 
 
-                    <Link exact to="/products/drinks#drinks" activeClassName="navbarSelected"><button className="navbutton">Drinks</button></Link>
+                    <Link exact to="/products/drinks#home" activeClassName="navbarSelected"><button className="navbutton">Drinks</button></Link>
 
 
-                    <Link exact to="/products/others#others" activeClassName="navbarSelected"><button className="navbutton highlight">Upcomming Products</button></Link>
+                    <Link exact to="/products/others#home" activeClassName="navbarSelected"><button className="navbutton highlight">Upcomming Products</button></Link>
 
                 </div>
             </div>

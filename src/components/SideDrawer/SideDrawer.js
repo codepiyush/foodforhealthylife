@@ -50,7 +50,7 @@ class sideDrawer extends React.Component {
             <div className="menuContainer">
               <div className="productToggle">
                 <div>
-                  <Link to="/products#home" activeClassName="sidebarSelected">
+                  <Link onClick={this.props.closeDrawer} to="/products#home" activeClassName="sidebarSelected">
                     <div className="sideMenuExtra">
                       <div>
                         <i class="fas fa-shopping-cart"></i>
@@ -64,24 +64,36 @@ class sideDrawer extends React.Component {
                 <div id="productToggleButton" onClick={this.props.handleProductToggle}> <i class="fas fa-angle-right"></i></div>
               </div>
               <div className={`sidecontent ${this.props.sidecontentView}`}>
-                <Link smooth to="/products/cookie#cookie">
+                <Link smooth onClick={this.props.closeDrawer} to="/products/cookie#home">
                   <div className="smitem">Cookie</div>
                 </Link>
-                <Link smooth to="/products/drinks#drinks">
+                <Link smooth onClick={this.props.closeDrawer} to="/products/drinks#home">
                   <div className="smitem" id="sportsd">
                     Drinks
                   </div>
                 </Link>
-                <Link smooth to="/products/healthy#healthy">
+                <Link smooth onClick={this.props.closeDrawer} to="/products/healthy#home">
                   <div className="smitem">Healthy Cookies</div>
                 </Link>
-                <Link smooth to="/products/others#others">
+                <Link smooth onClick={this.props.closeDrawer} to="/products/others#home">
                   <div className="smitem">Upcomming Products</div>
                 </Link>
               </div>
             </div>
             <div className="menuContainer">
-              <Link smooth to="/about#about" activeClassName="sidebarSelected">
+              <Link smooth onClick={this.props.closeDrawer} to="/BuyNow" activeClassName="sidebarSelected">
+                <div className="sideMenuLink">
+                  <div>
+                    <i class="fas fa-shopping-bag"></i>
+                  </div>
+                  <div>
+                    <p>Buy Now</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            <div className="menuContainer">
+              <Link smooth onClick={this.props.closeDrawer} to="/about#home" activeClassName="sidebarSelected">
                 <div className="sideMenuLink">
                   <div>
                     <i class="fas fa-users"></i>
@@ -93,7 +105,7 @@ class sideDrawer extends React.Component {
               </Link>
             </div>
             <div className="menuContainer">
-              <Link smooth to="/presence" activeClassName="sidebarSelected">
+              <Link smooth onClick={this.props.closeDrawer} to="/presence" activeClassName="sidebarSelected">
                 <div className="sideMenuLink">
                   <div>
                     <i class="fas fa-map-marked-alt"></i>
@@ -122,7 +134,7 @@ class sideDrawer extends React.Component {
               </a>
             </div>
             <div className="menuContainer">
-              <a href={`#contact`}>
+              <a href={`#contact`} onClick={this.props.closeDrawer}>
                 <div className="sideMenuLink">
                   <div>
                     <i class="fas fa-envelope"></i>
