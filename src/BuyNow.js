@@ -64,7 +64,7 @@ class BuyNow extends React.Component{
           <div className="presence-home presence-cont">
                     <p>For Large Orders</p>
                     <p>Contact Us Directly</p>
-                    <p>Scroll down or click on "Contact Us" on sidebar</p>
+                    <p>Scroll down or click on <span>"Contact Us"</span> on sidebar</p>
           </div>
           </div>
         );
