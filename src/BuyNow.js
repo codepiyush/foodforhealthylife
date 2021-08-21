@@ -8,7 +8,7 @@ class BuyNow extends React.Component{
           cookies: [
             {
               images: [
-                require("/home/atul/foodforhealthylife/src/images/flipkart.png"),
+                require("./images/flipkart.png"),
               ],
               name: "flipkart",
               link:"https://www.flipkart.com/search?q=bakkii+cookii&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&p%5B%5D=facets.brand%255B%255D%3DBAKKII%2BCOOKII",
@@ -18,7 +18,7 @@ class BuyNow extends React.Component{
             },
             {
               images: [
-                require("/home/atul/foodforhealthylife/src/images/gramfactory.png"),
+                require("./images/gramfactory.png"),
               ],
               name: "GramFactory",
               link:"https://play.google.com/store/apps/details?id=com.gram.factory.retailerapplication",
@@ -28,7 +28,7 @@ class BuyNow extends React.Component{
             },
             {
               images: [
-                require("/home/atul/foodforhealthylife/src/images/bigbasket1.png"),
+                require("./images/bigbasket1.png"),
               ],
               name: "Big Basket",
               link:"https://www.bigbasket.com/pb/bakkii-cookii/",
