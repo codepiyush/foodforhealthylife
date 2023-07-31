@@ -49,13 +49,6 @@ class Footer extends React.Component {
                                 </a>{" "}
                             </div>
                             <div>
-                                {" "}
-                                <a href="mailto:oprana@gmail.com">
-                                    <i class="fas fa-envelope"></i>{" "}
-                                    oprana@gmail.com
-                                </a>{" "}
-                            </div>
-                            <div>
                                 <i
                                     class="fas fa-mobile"
                                     style={{
@@ -63,11 +56,6 @@ class Footer extends React.Component {
                                     }}
                                 ></i>{" "}
                                 8130758722
-                            </div>
-                            <div>
-                                <a href="http://theemaster.com">
-                                    <i class="fab fa-blogger-b"></i> THEe MASTER
-                                </a>
                             </div>
                             <div>
                                 <a href="https://www.instagram.com/bakkii_cookii/">
